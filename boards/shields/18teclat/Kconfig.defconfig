@@ -1,0 +1,6 @@
+if SHIELD_18TECLAT
+
+config ZMK_KEYBOARD_NAME
+    default "Lo Teclat Divuit"
+
+endif
