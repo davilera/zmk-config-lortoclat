@@ -129,21 +129,13 @@
 //								14	15 	16 	17		
        keymap {
                 compatible = "zmk,keymap";
-                
-    alpha1 {
+       		alpha1 {
 		bindings = <
-		 		    &kp L &kp G &kp D                           &kp H &kp U &kp O	  
-		  &kp I &kp S &kp R &kp T                           &kp N &kp E &kp A &kp C
-                              &kp W &kp X   &kp Y &kp Z
+		 		&hm_l LCTL L 	&hm_l LALT G 	&hm_l LGUI D		&hm_r RGUI H 	&hm_r RALT U    	&hm_r RCTL O	  
+		&hl_l NM1 I	&hl_l SM2 S	&hl_l SM1 R	&hl_l SYS T 	 	&hl_r SYS N    	&hl_r SM1 E   		&hl_r SM2 A 	&hl_r NM1 C
+			 	 		 		&mt LC(LS(LALT)) SPC &key_repeat  &caps_alpha2macro	&alpha2macro	 	
 		>;
 		};
-//       		alpha1 {
-//		bindings = <
-//		 		&hm_l LCTL L 	&hm_l LALT G 	&hm_l LGUI D		&hm_r RGUI H 	&hm_r RALT U    	&hm_r RCTL O	  
-//		&hl_l NM1 I	&hl_l SM2 S	&hl_l SM1 R	&hl_l SYS T 	 	&hl_r SYS N    	&hl_r SM1 E   		&hl_r SM2 A 	&hl_r NM1 C
-//			 	 		 		&mt LC(LS(LALT)) SPC &key_repeat  &caps_alpha2macro	&alpha2macro	 	
-//		>;
-//		};
        		alpha2 {
 		bindings = <
 		 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT			&kp Z 		
