@@ -7,6 +7,6 @@ config ZMK_USB
 		default y
 
 config ZMK_KEYBOARD_NAME
-    default "Lo Teclat Divuit"
+    default "18 TECLAT"
 
 endif
