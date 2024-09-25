@@ -140,7 +140,7 @@
     compatible = "zmk,keymap";
     alpha1 {
       bindings = <
-        &hm_l LCTL L   &hm_l LALT G   &hm_l LGUI D    &ht B A   &ht &u00C1 A      &hm_r RCTL O
+        &hm_l LCTL L   &hm_l LALT G   &hm_l LGUI D    &ht B A   &ht RA(E) E      &hm_r RCTL O
         &hl_l NM1 I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T      &hl_r SYS N      &hl_r SM1 E       &hl_r SM2 A   &hl_r NM1 C
         &to BT &mt LC(LS(LALT)) SPC   &alpha2macro &caps_alpha2macro
       >;
