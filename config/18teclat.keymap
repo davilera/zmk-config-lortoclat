@@ -32,7 +32,7 @@
 	macros {
 		compatible = "zmk,behavior-macro";
 		i18n_ellipsis: i18n_ellipsis { // …
-			label = "ELLIPSIS",
+			label = "ELLIPSIS";
 			#binding-cells = <0>;
 			bindings = <
 				&kp LC(LS(U)) &kp N2 &kp N0 &kp N2 &kp N6
