@@ -29,15 +29,18 @@
 #define AL2U 7
 
 / {
-	macros {
-		i18n_ellipsis: i18n_ellipsis { // …
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <
-				&kp LC(LS(U)) &kp N2 &kp N0 &kp N2 &kp N6
-			>;
-		};
-	};
+  macros {
+    i18n_ellipsis: i18n_ellipsis { // …
+      compatible = "zmk,behavior-macro";
+      wait-ms: <30>;
+      tap-ms: <10>;
+      #binding-cells = <0>;
+      bindings
+        = < &macro_tap &kp LC(LS(U)) >
+        , < &macro_tap &kp N2 &kp N0 &kp N2 &kp N6 >
+        , < &macro_tap &kp ENTER >;
+    };
+  };
 
   combos {
     compatible = "zmk,combos";
@@ -142,7 +145,7 @@
     alpha1 {
       bindings = <
         &hm_l LCTL L   &hm_l LALT G   &hm_l LGUI D    &ht B &i18n_ellipsis   &ht RA(E) E      &hm_r RCTL O
-        &hl_l LSHIFT I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T      &hl_r SYS N      &hl_r SM1 E       &hl_r SM2 A   &hl_r NM1 C
+        &mt LSHIFT I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T      &hl_r SYS N      &hl_r SM1 E       &hl_r SM2 A   &i18n_ellipsis
         &to BT &mt LC(LS(LALT)) SPC   &alpha2macro &caps_alpha2macro
       >;
     };
