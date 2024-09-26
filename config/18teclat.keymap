@@ -32,13 +32,12 @@
   macros {
     i18n_ellipsis: i18n_ellipsis { // …
       compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <10>;
+      wait-ms = <30>;
+      tap-ms = <30>;
       #binding-cells = <0>;
       bindings
         = < &macro_tap &kp LC(LS(U)) >
         , < &macro_tap &kp N2 &kp N0 &kp N2 &kp N6 >
-				, < &macro_wait_time 125 >
         , < &macro_tap &kp ENTER >;
     };
   };
