@@ -29,7 +29,19 @@
 #define SYS 5
 #define BT 6
 #define AL2U 7
+
 / {
+	macros {
+		compatible = "zmk,behavior-macro";
+		i18n_ellipsis: i18n_ellipsis { // …
+			label = "ELLIPSIS",
+			#binding-cells = <0>;
+			bindings = <
+				&kp LC(LS(U)) &kp N2 &kp N0 &kp N2 &kp N6
+			>;
+		};
+	};
+
   combos {
     compatible = "zmk,combos";
     combo_sys {
