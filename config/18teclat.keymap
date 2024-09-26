@@ -32,8 +32,8 @@
   macros {
     i18n_ellipsis: i18n_ellipsis { // …
       compatible = "zmk,behavior-macro";
-      wait-ms = <30>;
-      tap-ms = <10>;
+      wait-ms = <1>;
+      tap-ms = <1>;
       #binding-cells = <0>;
       bindings
         = < &macro_tap &kp LC(LS(U)) >
@@ -136,6 +136,14 @@
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
+    ht_hold_macro: behavior_hold_macro_tap {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <190>;
+      quick-tap-ms = <250>;
+      flavor = "balanced";
+      bindings = <&macro>, <&kp>;
+    };
   };
   //     0   1   2          3   4   5
   // 6   7   8   9          10  11  12  13
@@ -144,7 +152,7 @@
     compatible = "zmk,keymap";
     alpha1 {
       bindings = <
-        &hm_l LCTL L   &hm_l LALT G   &hm_l LGUI D    &ht B &i18n_ellipsis   &ht RA(E) E      &hm_r RCTL O
+        &hm_l LCTL L   &hm_l LALT G   &hm_l LGUI D    &ht_hold_macro &i18n_ellipsis B   &ht RA(E) E      &hm_r RCTL O
         &mt LSHIFT I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T      &hl_r SYS N      &hl_r SM1 E       &hl_r SM2 A   &i18n_ellipsis
         &to BT &mt LC(LS(LALT)) SPC   &alpha2macro &caps_alpha2macro
       >;
