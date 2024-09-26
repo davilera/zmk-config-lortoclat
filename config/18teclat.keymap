@@ -142,7 +142,7 @@
       tapping-term-ms = <190>;
       quick-tap-ms = <250>;
       flavor = "balanced";
-      bindings = <&macro>, <&kp>;
+      bindings = <&i18n_ellipsis>, <&kp>;
     };
   };
   //     0   1   2          3   4   5
@@ -152,7 +152,7 @@
     compatible = "zmk,keymap";
     alpha1 {
       bindings = <
-        &hm_l LCTL L   &hm_l LALT G   &hm_l LGUI D    &ht_hold_macro &i18n_ellipsis B   &ht RA(E) E      &hm_r RCTL O
+        &hm_l LCTL L   &hm_l LALT G   &hm_l LGUI D    &ht_hold_macro 0 B   &ht RA(E) E      &hm_r RCTL O
         &mt LSHIFT I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T      &hl_r SYS N      &hl_r SM1 E       &hl_r SM2 A   &i18n_ellipsis
         &to BT &mt LC(LS(LALT)) SPC   &alpha2macro &caps_alpha2macro
       >;
