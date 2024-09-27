@@ -142,8 +142,8 @@
 		alpha1 {
 			bindings = <
                   &utf_ellipsis &utf_upper_a &utf_upper_o            &utf_ndash      &utf_mdash      &utf_nbsp
-        &type_qui &type_que     &type_ldotl  &type_cio               &type_qui_acute &type_que_acute &type_que_grave
-                                                 &type_000 &kp A   &kp B &kp C
+        &type_qui &type_que     &type_ldotl  &type_cio               &type_qui_acute &type_que_acute &type_que_grave &type_000 
+                                                &kp A &kp B     &kp C &kp D
 			>;
 		};
     // alpha1 {
