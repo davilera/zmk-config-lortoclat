@@ -12,13 +12,13 @@
 
 
 &mt {
-    tapping-term-ms = <201>;
-    flavor = "tap-preferred";
- };
+  tapping-term-ms = <201>;
+  flavor = "tap-preferred";
+};
 &sk {
-     release-after-ms = <2000>;
-     quick-release;
- };
+  release-after-ms = <2000>;
+  quick-release;
+};
 
 /* Layers */
 #define AL1 0
