@@ -166,7 +166,7 @@
       bindings = <
                       &kp AT        &kp HASH      &kp DOLLAR              &kp AMPS      &kp LBRC      &kp RBRC
         &kp GRAVE     &kp DQT       &kp UNDER     &kp PIPE                &kp TILDE     &kp LBKT      &kp RBKT      &kp COLON
-                                    &none         &type_nbsp              &none         &none
+                                    &none         &utf_nbsp               &none         &none
       >;
     };
 
