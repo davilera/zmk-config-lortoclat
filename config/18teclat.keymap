@@ -200,6 +200,6 @@
 //                                    &sys_reset    &bootloader             &none         &none
 //      >;
 //    };
-//  };
+  };
 };
 
