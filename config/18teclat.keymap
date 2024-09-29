@@ -74,14 +74,6 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
-    htl: holdtap_layer {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <220>;
-      quick-tap-ms = <250>;
-      flavor = "tap-preferred";
-      bindings = <&mo>, <&kp>;
-    };
     ht: holdtap {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -90,9 +82,17 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
+    htl: holdtap_layer {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <220>;
+      quick-tap-ms = <250>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <&kp>;
+    };
 
     // ---------------------------------------------------
-    //    KEYPRESS PRESETS
+    //    SPECIAL KEYS
     // ---------------------------------------------------
     kp_space: kp_space {
       compatible = "zmk,behavior-tap-dance";
@@ -108,11 +108,19 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&key_repeat>;
     };
+    key_que_diacs: key_que_diacs {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
+      quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
+      flavor = "tap-preferred";
+      bindings = <&type_que_grave>, <&type_que_acute>;
+    };
 
     // ---------------------------------------------------
     //    I18N - HOLDING UTF CHARS
     // ---------------------------------------------------
-    kp_elli: kp_elli {
+    ht_elli: ht_elli {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -120,7 +128,7 @@
       flavor = "tap-preferred";
       bindings = <&utf_ellipsis>, <&kp>;
     };
-    kp_ndsh: kp_ndsh {
+    ht_ndsh: ht_ndsh {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -128,7 +136,7 @@
       flavor = "tap-preferred";
       bindings = <&utf_ndash>, <&kp>;
     };
-    kp_ordf: kp_ordf {
+    ht_ordf: ht_ordf {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -136,7 +144,7 @@
       flavor = "tap-preferred";
       bindings = <&utf_fem_ord>, <&kp>;
     };
-    kp_ordm: kp_ordm {
+    ht_ordm: ht_ordm {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -144,7 +152,7 @@
       flavor = "tap-preferred";
       bindings = <&utf_masc_ord>, <&kp>;
     };
-    kp_mdsh: kp_mdsh {
+    ht_mdsh: ht_mdsh {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -173,9 +181,9 @@
 
     i18n {
       bindings = <
-                      &type_o_grave &kp RA(Y)       &type_ldotl           &kp RA(J)     &kp RA(U)     &kp RA(O)
-        &kp RA(I)     &type_a_grave &type_e_grave   &type_cio             &kp RA(N)     &kp RA(E)     &kp RA(A)      &kp RA(COMMA)
-                                    &type_qui_acute &type_que_acute       &none         &none
+                      &type_o_grave &kp RA(Y)       &type_ldotl           &kp RA(J)     &kp RA(U)     &ht RA(P) RA(O)
+        &kp RA(I)     &type_a_grave &type_e_grave   &type_cio             &kp RA(N)     &kp RA(E)     &ht RA(Q) RA(A)      &kp RA(COMMA)
+                                    &type_qui_acute &key_que_diacs 0 0    &none         &none
       >;
     };
 
