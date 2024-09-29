@@ -97,7 +97,7 @@
 		kp_space: kp_space {
 			compatible = "zmk,behavior-tap-dance";
 				#binding-cells = <0>;
-				tapping-term-ms = <200>;
+				tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
 				bindings = <&ht LC(LA(LGUI)) SPC>, <&kp DOT>;
 		};
     kp_ellipsis_colon: kp_ellipsis_colon {
