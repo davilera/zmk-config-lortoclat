@@ -100,13 +100,13 @@
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
       bindings = <&ht LC(LA(LGUI)) SPC>, <&kp DOT>;
     };
-    kp_num_rpt: kp_num_rpt {
+    mo_rpt: mo_rpt {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
       quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
       flavor = "tap-preferred";
-      bindings = <&mo NUM>, <&key_repeat>;
+      bindings = <&mo>, <&key_repeat>;
     };
 
     // ---------------------------------------------------
@@ -157,9 +157,9 @@
     compatible = "zmk,keymap";
     alpha1 {
       bindings = <
-                      &hrm LGUI L   &hrm LALT G       &hrm LCTL D             &hrm RCTL H   &hrm LALT U   &hrm LGUI O
-        &mt LSHIFT I  &htl SYS  S   &htl SYM2 R       &htl SYM1 T             &htl SYM1 N   &htl SYM2 E   &htl SYS  A   &htl RSHIFT C
-                                    &kp_num_rpt 0 0   &kp_space               &mo I18N      &mo AL2
+                      &hrm LGUI L   &hrm LALT G     &hrm LCTL D             &hrm RCTL H   &hrm LALT U   &hrm LGUI O
+        &mt LSHIFT I  &htl SYS  S   &htl SYM2 R     &htl SYM1 T             &htl SYM1 N   &htl SYM2 E   &htl SYS  A   &htl RSHIFT C
+                                    &mo_rpt NUM 0   &kp_space               &mo I18N      &mo AL2
       >;
     };
 
