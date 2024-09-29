@@ -170,18 +170,17 @@
       >;
     };
 
-		sys  { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
+    sys {
+      bindings = <
+                      &kp ESC       &kp LC(LS(TAB)) &kp DEL                 &kp ENTER     &kp LEFT      &kp PSCRN
+        &none         &kp TAB       &kp LC(TAB)     &kp BKSP                &kp DOWN      &kp UP        &kp RIGHT   &kp RSHIFT
+                                    &kp LC(C)       &kp LC(V)               &kp LC(LS(V)) &kp LC(LS(C))
+      >;
+    };
+
 		num  { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
 		bt   { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
 
-//    sys {
-//      bindings = <
-//                      &kp ESC       &kp LC(LS(TAB)) &kp DEL                 &kp ENTER     &kp LEFT      &kp PSCRN
-//        &none         &kp TAB       &kp LC(TAB)     &kp BKSP                &kp DOWN      &kp UP        &kp RIGHT   &kp RSHIFT
-//                                    &kp LC(C)       &kp LC(V)               &kp LC(LS(V)) &kp LC(LS(C))
-//      >;
-//    };
-//
 //    num {
 //      bindings = <
 //                      &kp MINUS     &hrm LALT STAR &hrm LCTL PLUS          &hrm RCTL N7  &hrm LALT N8   &kp N9
