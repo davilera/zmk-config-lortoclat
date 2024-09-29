@@ -146,11 +146,6 @@
       >;
     };
 
-		sym2 { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
-		sys  { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
-		num  { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
-		bt   { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
-
     i18n {
       bindings = <
                       &kp O         &kp RA(Y)       &type_ldotl           &kp RA(J)     &kp RA(U)     &kp RA(O)
@@ -167,14 +162,18 @@
       >;
     };
 
-//    sym2 {
-//      bindings = <
-//                      &kp AT        &kp HASH      &kp DOLLAR              &kp AMPS      &kp LBRC      &kp RBRC
-//        &kp GRAVE     &kp DQT       &kp UNDER     &kp PIPE                &kp TILDE     &kp LBKT      &kp RBKT      &kp COLON
-//                                    &none         &utf_nbsp               &none         &none
-//      >;
-//    };
-//
+    sym2 {
+      bindings = <
+                      &kp AT        &kp HASH      &kp DOLLAR              &kp AMPS      &kp LBRC      &kp RBRC
+        &kp GRAVE     &kp DQT       &kp UNDER     &kp PIPE                &kp TILDE     &kp LBKT      &kp RBKT      &kp COLON
+                                    &none         &utf_nbsp               &none         &none
+      >;
+    };
+
+		sys  { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
+		num  { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
+		bt   { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
+
 //    sys {
 //      bindings = <
 //                      &kp ESC       &kp LC(LS(TAB)) &kp DEL                 &kp ENTER     &kp LEFT      &kp PSCRN
