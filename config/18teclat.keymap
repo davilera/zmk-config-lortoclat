@@ -173,7 +173,7 @@
     sys {
       bindings = <
                       &kp ESC       &kp LC(LS(TAB)) &kp DEL                 &kp ENTER     &kp LEFT      &kp PSCRN
-        &none         &kp TAB       &kp LC(TAB)     &kp BKSP                &kp DOWN      &kp UP        &kp RIGHT   &kp SHIFT
+        &none         &kp TAB       &kp LC(TAB)     &kp BKSP                &kp DOWN      &kp UP        &kp RIGHT   &kp RSHIFT
                                     &kp LC(C)       &kp LC(V)               &kp LC(LS(V)) &kp LC(LS(C))
       >;
     };
