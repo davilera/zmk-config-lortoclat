@@ -63,6 +63,9 @@
   };
 
   behaviors {
+		// ---------------------------------------------------
+		//    GENERICS
+		// ---------------------------------------------------
     hrm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -87,13 +90,23 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
-    kp_ellipsis_dot: kp_ellipsis_dot {
+
+		// ---------------------------------------------------
+		//    KEYPRESS PRESETS
+		// ---------------------------------------------------
+		kp_space: kp_space {
+			compatible = "zmk,behavior-tap-dance";
+				#binding-cells = <0>;
+				tapping-term-ms = <200>;
+				bindings = <&ht LC(LA(LGUI)) SPC>, <&kp DOT>;
+		};
+    kp_ellipsis_colon: kp_ellipsis_colon {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
+      #binding-cells = <0>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
       quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
       flavor = "tap-preferred";
-      bindings = <&utf_ellipsis>, <&kp>;
+      bindings = <&utf_ellipsis>, <&kp COLON>;
     };
     kp_ndash_minus: kp_ndash_minus {
       compatible = "zmk,behavior-hold-tap";
@@ -134,7 +147,7 @@
       bindings = <
                       &hrm LGUI L   &hrm LALT G   &hrm LCTL D             &hrm RCTL H   &hrm LALT U   &hrm LGUI O
         &mt LSHIFT I  &htl SYS  S   &htl SYM2 R   &htl SYM1 T             &htl SYM1 N   &htl SYM2 E   &htl SYS  A   &htl RSHIFT C
-                                    &htl NUM 0    &mt LC(LS(LALT)) SPC    &mo I18N      &mo AL2
+                                    &htl NUM 0    &kp_space               &mo I18N      &mo AL2
       >;
     };
 
