@@ -63,9 +63,9 @@
   };
 
   behaviors {
-		// ---------------------------------------------------
-		//    GENERICS
-		// ---------------------------------------------------
+    // ---------------------------------------------------
+    //    GENERICS
+    // ---------------------------------------------------
     hrm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -91,16 +91,28 @@
       bindings = <&kp>, <&kp>;
     };
 
-		// ---------------------------------------------------
-		//    KEYPRESS PRESETS
-		// ---------------------------------------------------
-		kp_space: kp_space {
-			compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
-				bindings = <&ht LC(LA(LGUI)) SPC>, <&kp DOT>;
-		};
-    kp_ellipsis_colon: kp_ellipsis_colon {
+    // ---------------------------------------------------
+    //    KEYPRESS PRESETS
+    // ---------------------------------------------------
+    kp_space: kp_space {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
+      bindings = <&ht LC(LA(LGUI)) SPC>, <&kp DOT>;
+    };
+    kp_num_rpt: kp_num_rpt {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
+      quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
+      flavor = "tap-preferred";
+      bindings = <&mo NUM>, <&key_repeat>;
+    };
+
+    // ---------------------------------------------------
+    //    I18N - HOLDING UTF CHARS
+    // ---------------------------------------------------
+    kp_ellipsis: kp_ellipsis {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -108,7 +120,7 @@
       flavor = "tap-preferred";
       bindings = <&utf_ellipsis>, <&kp>;
     };
-    kp_ndash_minus: kp_ndash_minus {
+    kp_ndash: kp_ndash {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -116,7 +128,7 @@
       flavor = "tap-preferred";
       bindings = <&utf_ellipsis>, <&kp>;
     };
-    kp_ordfem_at: kp_ordfem_at {
+    kp_ordfem: kp_ordfem {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -124,7 +136,7 @@
       flavor = "tap-preferred";
       bindings = <&utf_ellipsis>, <&kp>;
     };
-    kp_ordmasc_hash: kp_ordmasc_hash {
+    kp_ordmasc: kp_ordmasc {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -132,7 +144,7 @@
       flavor = "tap-preferred";
       bindings = <&utf_ellipsis>, <&kp>;
     };
-    kp_mdash_underscore: kp_mdash_underscore {
+    kp_mdash: kp_mdash {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -145,9 +157,9 @@
     compatible = "zmk,keymap";
     alpha1 {
       bindings = <
-                      &hrm LGUI L   &hrm LALT G   &hrm LCTL D             &hrm RCTL H   &hrm LALT U   &hrm LGUI O
-        &mt LSHIFT I  &htl SYS  S   &htl SYM2 R   &htl SYM1 T             &htl SYM1 N   &htl SYM2 E   &htl SYS  A   &htl RSHIFT C
-                                    &htl NUM 0    &kp_space               &mo I18N      &mo AL2
+                      &hrm LGUI L   &hrm LALT G       &hrm LCTL D             &hrm RCTL H   &hrm LALT U   &hrm LGUI O
+        &mt LSHIFT I  &htl SYS  S   &htl SYM2 R       &htl SYM1 T             &htl SYM1 N   &htl SYM2 E   &htl SYS  A   &htl RSHIFT C
+                                    &kp_num_rpt 0 0   &kp_space               &mo I18N      &mo AL2
       >;
     };
 
