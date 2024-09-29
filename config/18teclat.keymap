@@ -189,7 +189,7 @@
     bt {
       bindings = <
                       &none         &none         &none                   &none         &none         &none
-        &kp BT_CLR    &kp BT_SEL 2  &kp BT_SEL 1  &kp kp BT_SEL 0         &none         &none         &none         &none
+        &kp BT_CLR    &kp BT_SEL 2  &kp BT_SEL 1  &kp BT_SEL 0            &none         &none         &none         &none
                                     &sys_reset    &bootloader             &none         &none
       >;
     };
