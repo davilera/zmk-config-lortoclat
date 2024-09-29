@@ -112,7 +112,7 @@
     // ---------------------------------------------------
     //    I18N - HOLDING UTF CHARS
     // ---------------------------------------------------
-    kp_ellipsis: kp_ellipsis {
+    kp_elli: kp_elli {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
@@ -120,37 +120,37 @@
       flavor = "tap-preferred";
       bindings = <&utf_ellipsis>, <&kp>;
     };
-    kp_ndash: kp_ndash {
+    kp_ndsh: kp_ndsh {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
       quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
       flavor = "tap-preferred";
-      bindings = <&utf_ellipsis>, <&kp>;
+      bindings = <&utf_ndash>, <&kp>;
     };
-    kp_ordfem: kp_ordfem {
+    kp_ordf: kp_ordf {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
       quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
       flavor = "tap-preferred";
-      bindings = <&utf_ellipsis>, <&kp>;
+      bindings = <&utf_fem_ord>, <&kp>;
     };
-    kp_ordmasc: kp_ordmasc {
+    kp_ordm: kp_ordm {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
       quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
       flavor = "tap-preferred";
-      bindings = <&utf_ellipsis>, <&kp>;
+      bindings = <&utf_masc_ord>, <&kp>;
     };
-    kp_mdash: kp_mdash {
+    kp_mdsh: kp_mdsh {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
       quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
       flavor = "tap-preferred";
-      bindings = <&utf_ellipsis>, <&kp>;
+      bindings = <&utf_mdash>, <&kp>;
     };
   };
   keymap {
@@ -173,8 +173,8 @@
 
     i18n {
       bindings = <
-                      &kp O         &kp RA(Y)       &type_ldotl           &kp RA(J)     &kp RA(U)     &kp RA(O)
-        &kp RA(I)     &kp A         &kp E           &type_cio             &kp RA(N)     &kp RA(E)     &kp RA(A)      &kp RA(COMMA)
+                      &type_o_grave &kp RA(Y)       &type_ldotl           &kp RA(J)     &kp RA(U)     &kp RA(O)
+        &kp RA(I)     &type_a_grave &type_e_grave   &type_cio             &kp RA(N)     &kp RA(E)     &kp RA(A)      &kp RA(COMMA)
                                     &type_qui_acute &type_que_acute       &none         &none
       >;
     };
