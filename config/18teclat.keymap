@@ -235,14 +235,13 @@
       >;
     };
 
-    sym2 { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
-//    sym2 {
-//      bindings = <
-//                    &ht_ordf 0 AT   &ht_ordm 0 HASH    &ht RA(N5) DOLLAR             &kp AMPS    &ht RA(RS(LBKT)) LBRC   &ht RA(RS(RBKT)) RBRC
-//         &kp GRAVE  &kp DQT         &ht_mdsh 0 UNDER   &kp PIPE                      &kp TILDE   &ht_deqt 0 BKT          &ht RA(RS(LBKT)) RBKT   &ht_elli 0 COLON
-//                                    &none              &utf_nbsp                     &none       &none
-//      >;
-//    };
+    sym2 {
+      bindings = <
+                    &ht_ordf 0 AT   &ht_ordm 0 HASH    &ht RA(N5) DOLLAR             &kp AMPS    &ht RA(RS(LBKT)) LBRC   &ht RA(RS(RBKT)) RBRC
+         &kp GRAVE  &kp DQT         &ht_mdsh 0 UNDER   &kp PIPE                      &kp TILDE   &ht_deqt 0 LBKT         &ht RA(RS(LBKT)) RBKT   &ht_elli 0 COLON
+                                    &none              &utf_nbsp                     &none       &none
+      >;
+    };
 
     sys {
       bindings = <
