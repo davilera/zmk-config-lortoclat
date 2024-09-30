@@ -221,9 +221,9 @@
 
     i18n {
       bindings = <
-                   &type_o_grave        &kp RA(Y)           &type_ldotl              &kp RA(J)       &kp RA(U)        &ht RA(P) RA(O)
-        &kp RA(I)  &ht_agrv RA(S) 0     &type_e_grave       &type_cio                &kp RA(N)       &kp RA(E)        &ht RA(Q) RA(A)  &kp RA(COMMA)
-                                        &type_qui_acute     &key_que_diacs 0 0       &none           &none
+                          &type_o_grave        &kp RA(Y)           &type_ldotl              &kp RA(J)       &kp RA(U)        &ht RA(P) RA(O)
+        &mt LSHIFT RA(I)  &ht_agrv RA(S) 0     &type_e_grave       &type_cio                &kp RA(N)       &kp RA(E)        &ht RA(Q) RA(A)  &mt RSFHIT RA(COMMA)
+                                               &type_qui_acute     &key_que_diacs 0 0       &none           &none
       >;
     };
 
@@ -261,9 +261,9 @@
 
     bt {
       bindings = <
-                      &none         &none         &none                   &none    &none    &none
-        &bt BT_CLR    &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0            &none    &none    &none    &none
-                                    &sys_reset    &bootloader             &none    &none
+                      &none         &none         &none                   &none     &none    &none
+        &bt BT_CLR    &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0            &none     &none    &none    &none
+                                    &sys_reset    &bootloader             &to AL1   &none
       >;
     };
   };
