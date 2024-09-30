@@ -227,14 +227,13 @@
       >;
     };
 
-    sym1 { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
-//    sym1 {
-//      bindings = <
-//                   &ht_ndsh 0 MINUS     &kp STAR            &kp PLUS                 &kp CARET       &ht RA(N9) LPAR  &ht RA(N0) RPAR
-//        &kp SLASH  &ht RA(RS(N1)) EXCL  &ht RA(QMARK) QMARK &kp BSLH                 &ht_deg 0 PRCNT &ht RA(LBRC) LT  &ht RA(RBRC) GT  &kp SEMICOLON
-//                                        &none               &kp EQUAL                &none           &none
-//      >;
-//    };
+    sym1 {
+      bindings = <
+                   &ht_ndsh 0 MINUS     &kp STAR            &kp PLUS                 &kp CARET       &ht RA(N9) LPAR  &ht RA(N0) RPAR
+        &kp SLASH  &ht RA(RS(N1)) EXCL  &ht RA(QMARK) QMARK &kp BSLH                 &ht_deg 0 PRCNT &ht RA(LBRC) LT  &ht RA(RBRC) GT  &kp SEMICOLON
+                                        &none               &kp EQUAL                &none           &none
+      >;
+    };
 
     sym2 { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
 //    sym2 {
