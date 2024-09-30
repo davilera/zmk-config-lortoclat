@@ -247,19 +247,18 @@
     sys {
       bindings = <
                     &kp ESC     &hrm LATL LC(LS(TAB))   &hrm LCTL DEL                &kp BKSP        &ht HOME LEFT  &ht LS(PSCRN) PSCRN
-        &none       &kp TAB     &kp LC(TAB)             &kp ENTER                    &ht PG_DN DOWN  &ht PG_UP UP   &kp END RIGHT        &kp RSHIFT
+        &none       &kp TAB     &kp LC(TAB)             &kp ENTER                    &ht PG_DN DOWN  &ht PG_UP UP   &ht END RIGHT        &kp RSHIFT
                                 &kp LC(C)               &kp LC(V)                    &kp LC(LS(V))   &kp LC(LS(C))
       >;
     };
 
-    num { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
-//    num {
-//      bindings = <
-//                                &ht EQUAL MINUS &hrm LALT STAR &hrm LCTL PLUS          &hrm RCTL N7  &hrm LALT N8   &ht_nbsp 0 N9
-//        &ht LC(LA(LGUI)) SLASH  &kp N3          &kp N2         &kp N1                  &kp N4        &kp N5         &kp N6         &ht LC(LA(LS(LGUI))) ENTER
-//                                                &none          &none                   &ht_000 0 N0  &kp DOT
-//      >;
-//    };
+    num {
+      bindings = <
+                                &ht EQUAL MINUS &hrm LALT STAR &hrm LCTL PLUS          &hrm RCTL N7  &hrm LALT N8   &ht_nbsp 0 N9
+        &ht LC(LA(LGUI)) SLASH  &kp N3          &kp N2         &kp N1                  &kp N4        &kp N5         &kp N6         &ht LC(LA(LS(LGUI))) ENTER
+                                                &none          &none                   &ht_000 0 N0  &ht UNDER DOT
+      >;
+    };
 
     bt { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
 //    bt {
