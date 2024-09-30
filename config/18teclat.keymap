@@ -160,6 +160,14 @@
       flavor = "tap-preferred";
       bindings = <&utf_mdash>, <&kp>;
     };
+    ht_agrv: ht_agrv {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
+      quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&type_a_grave>;
+    };
   };
   keymap {
     compatible = "zmk,keymap";
@@ -181,8 +189,8 @@
 
     i18n {
       bindings = <
-                      &type_o_grave &kp RA(Y)       &type_ldotl           &kp RA(J)     &kp RA(U)     &ht RA(P) RA(O)
-        &kp RA(I)     &type_a_grave &type_e_grave   &type_cio             &kp RA(N)     &kp RA(E)     &ht RA(Q) RA(A)      &kp RA(COMMA)
+                   &type_o_grave    &kp RA(Y)       &type_ldotl           &kp RA(J)     &kp RA(U)     &ht RA(P) RA(O)
+        &kp RA(I)  &ht_agrv RA(S) 0 &type_e_grave   &type_cio             &kp RA(N)     &kp RA(E)     &ht RA(Q) RA(A)      &kp RA(COMMA)
                                     &type_qui_acute &key_que_diacs 0 0    &none         &none
       >;
     };
