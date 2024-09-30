@@ -244,13 +244,14 @@
 //      >;
 //    };
 
-    sys {
-      bindings = <
-                    &kp ESC     &hrm LATL LC(LS(TAB))   &hrm LCTL DEL                &kp BKSP        &ht HOME LEFT  &ht LS(PSCRN) PSCRN
-        &none       &kp TAB     &kp LC(TAB)             &kp ENTER                    &ht PG_DN DOWN  &ht PG_UP UP   &ht END RIGHT        &kp RSHIFT
-                                &kp LC(C)               &kp LC(V)                    &kp LC(LS(V))   &kp LC(LS(C))
-      >;
-    };
+    sys { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
+//    sys {
+//      bindings = <
+//                    &kp ESC     &hrm LATL LC(LS(TAB))   &hrm LCTL DEL                &kp BKSP        &ht HOME LEFT  &ht LS(PSCRN) PSCRN
+//        &none       &kp TAB     &kp LC(TAB)             &kp ENTER                    &ht PG_DN DOWN  &ht PG_UP UP   &ht END RIGHT        &kp RSHIFT
+//                                &kp LC(C)               &kp LC(V)                    &kp LC(LS(V))   &kp LC(LS(C))
+//      >;
+//    };
 
     num {
       bindings = <
@@ -260,14 +261,13 @@
       >;
     };
 
-    bt { bindings = < &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none >; };
-//    bt {
-//      bindings = <
-//                      &none         &none         &none                   &none    &none    &none
-//        &bt BT_CLR    &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0            &none    &none    &none    &none
-//                                    &sys_reset    &bootloader             &none    &none
-//      >;
-//    };
+    bt {
+      bindings = <
+                      &none         &none         &none                   &none    &none    &none
+        &bt BT_CLR    &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0            &none    &none    &none    &none
+                                    &sys_reset    &bootloader             &none    &none
+      >;
+    };
   };
 };
 
