@@ -59,13 +59,13 @@
       timeout-ms = <30>;
       key-positions = <7 8 9>;
       bindings = <&caps_word>;
-      layers = <SYS>;
+      layers = <AL1>;
     };
     combo_num {
       timeout-ms = <30>;
       key-positions = <10 11 12>;
       bindings = <&to NUM>;
-      layers = <SYS>;
+      layers = <AL1>;
     };
   };
 
