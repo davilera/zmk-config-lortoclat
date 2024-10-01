@@ -260,9 +260,9 @@
 
     num {
       bindings = <
-                                &ht EQUAL MINUS &hrm LCTL STAR &hrm LALT PLUS         &hrm LALT N7   &hrm RCTL N8   &ht_nbsp 0 N9
-        &ht LC(LA(LGUI)) SLASH  &kp N3          &kp N2         &kp N1                 &kp N4         &kp N5         &kp N6         &mt RSHIFT ENTER
-                                                &none          &to AL1                &ht UNDER DOT  &ht_000 0 N0
+                                &ht EQUAL MINUS &hrm LCTL STAR &hrm LALT PLUS         &hrm LALT NP7  &hrm RCTL NP8  &ht_nbsp 0 NP9
+        &ht LC(LA(LGUI)) SLASH  &kp NP3         &kp NP2        &kp NP1                &kp NP4        &kp NP5        &kp NP6         &mt RSHIFT ENTER
+                                                &none          &to AL1                &ht UNDER DOT  &ht_000 0 NP0
       >;
     };
 
