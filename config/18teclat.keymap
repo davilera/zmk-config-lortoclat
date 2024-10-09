@@ -214,7 +214,7 @@
       bindings = <
                       &hrm LGUI L       &hrm LCTL G         &hrm LALT D              &hrm LALT H     &hrm RCTL U      &hrm LGUI O
         &mt LSHIFT I  &htl SYM2 S       &htl SYM1 R         &htl SYS  T              &htl SYS  N     &htl SYM1 E      &htl SYM2 A      &mt RSHIFT C
-                                        &mo_rpt NUM 0       &key_space               &mo AL2         &mo I18N
+                                        &mo_rpt NUM 0       &key_space               &sl AL2         &sl I18N
       >;
     };
 
