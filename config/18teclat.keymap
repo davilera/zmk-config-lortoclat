@@ -16,7 +16,7 @@
   flavor = "tap-preferred";
 };
 
-&sk {
+&sl {
 	release-after-ms = <200>;
 	quick-release;
 };
