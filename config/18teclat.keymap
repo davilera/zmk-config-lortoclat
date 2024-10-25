@@ -33,8 +33,8 @@
 //   DELAYS
 // ===================
 
-#define HOLDTAP_TAPPING_TERM_MS 150
-#define HOLDTAP_QUICK_TAP_MS 250
+#define HOLDTAP_TAPPING_TERM_MS 200
+#define HOLDTAP_QUICK_TAP_MS 200
 
 // ===================
 //   LAYOUT
