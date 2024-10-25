@@ -97,6 +97,14 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    htl2: holdtap_layer {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <220>;
+      quick-tap-ms = <250>;
+      flavor = "hold-preferred";
+      bindings = <&mo>, <&kp>;
+    };
 
     // ---------------------------------------------------
     //    SPECIAL KEYS
@@ -204,9 +212,9 @@
     compatible = "zmk,keymap";
     alpha1 {
       bindings = <
-                      &hrm LGUI L       &hrm LCTL G         &hrm LALT D              &hrm LALT H      &hrm RCTL U      &hrm LGUI O
-        &mt LSHIFT I  &htl SYM2 S       &htl SYM1 R         &htl SYS  T              &htl SYS  N      &htl SYM1 E      &htl SYM2 A      &mt RSHIFT C
-                                        &mo_rpt NUM 0       &key_space               &htl AL2  COMMA  &htl I18N DOT
+                      &hrm LGUI L       &hrm LCTL G         &hrm LALT D              &hrm  LALT H      &hrm  RCTL U      &hrm LGUI O
+        &mt LSHIFT I  &htl SYM2 S       &htl SYM1 R         &htl SYS  T              &htl  SYS  N      &htl  SYM1 E      &htl SYM2 A      &mt RSHIFT C
+                                        &mo_rpt NUM 0       &key_space               &htl2 AL2  COMMA  &htl2 I18N DOT
       >;
     };
 
