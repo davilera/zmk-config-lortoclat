@@ -16,11 +16,6 @@
   flavor = "tap-preferred";
 };
 
-&sl {
-	release-after-ms = <200>;
-	quick-release;
-};
-
 // ===================
 //   LAYERS
 // ===================
@@ -120,14 +115,6 @@
       tapping-term-ms = <250>;
       bindings = <&ht LC(LA(LGUI)) SPC>, <&kp DOT>;
     };
-    key_que_diacs: key_que_diacs {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
-      quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
-      flavor = "tap-preferred";
-      bindings = <&type_que_grave>, <&type_que_acute>;
-    };
 
     // ---------------------------------------------------
     //    I18N - HOLDING UTF CHARS
@@ -217,41 +204,41 @@
     compatible = "zmk,keymap";
     alpha1 {
       bindings = <
-                      &hrm LGUI L       &hrm LCTL G         &hrm LALT D              &hrm LALT H     &hrm RCTL U      &hrm LGUI O
-        &mt LSHIFT I  &htl SYM2 S       &htl SYM1 R         &htl SYS  T              &htl SYS  N     &htl SYM1 E      &htl SYM2 A      &mt RSHIFT C
-                                        &mo_rpt NUM 0       &key_space               &sl AL2         &sl I18N
+                      &hrm LGUI L       &hrm LCTL G         &hrm LALT D              &hrm LALT H      &hrm RCTL U      &hrm LGUI O
+        &mt LSHIFT I  &htl SYM2 S       &htl SYM1 R         &htl SYS  T              &htl SYS  N      &htl SYM1 E      &htl SYM2 A      &mt RSHIFT C
+                                        &mo_rpt NUM 0       &key_space               &htl AL2  COMMA  &htl I18N DOT
       >;
     };
 
     alpha2 {
       bindings = <
-                      &hrm LGUI V       &hrm LCTL W         &hrm LALT M              &hrm LALT F     &hrm RCTL SQT    &hrm LGUI Z
-        &mt LSHIFT Q  &kp  J            &kp  P              &kp  K                   &kp B           &kp  COMMA       &kp  X           &mt RSHIFT Y
-                                        &type_qui           &type_que                &none           &none
+                      &hrm LGUI V       &hrm LCTL W         &hrm LALT M              &hrm LALT F     &hrm RCTL DQT    &hrm LGUI Z
+        &mt LSHIFT Q  &kp  J            &kp  P              &kp  K                   &kp B           &kp  SQT         &kp  X           &mt RSHIFT Y
+                                        &type_pr            &type_qu                 &none           &none
       >;
     };
 
     i18n {
       bindings = <
-                          &type_o_grave        &kp RA(Y)           &type_ldotl              &kp RA(J)       &kp RA(U)        &ht RA(P) RA(O)
-        &mt LSHIFT RA(I)  &ht_agrv RA(S) 0     &type_e_grave       &type_cio                &kp RA(N)       &kp RA(E)        &ht RA(Q) RA(A)  &mt RSHIFT RA(COMMA)
-                                               &type_qui_acute     &key_que_diacs 0 0       &none           &none
+                         &type_o_grave        &kp RA(Y)           &type_ldotl              &kp RA(COMMA)   &kp RA(U)        &ht RA(P) RA(O)
+        &mt RSHIFTRA(J)  &ht_agrv RA(S) 0     &type_e_grave       &type_cio                &kp RA(N)       &kp RA(E)        &ht RA(Q) RA(A)  &mt RSHIFT RA(I)
+                                              &type_qumlaut       &type_qu                 &none           &none
       >;
     };
 
     sym1 {
       bindings = <
-                   &ht_ndsh 0 MINUS     &kp STAR            &kp PLUS                 &kp CARET       &ht RA(N9) LPAR  &ht RA(N0) RPAR
-        &kp SLASH  &ht RA(RS(N1)) EXCL  &ht RA(QMARK) QMARK &kp PIPE                 &ht_deg 0 PRCNT &ht RA(LBKT) LT  &ht RA(RBKT) GT  &kp SEMICOLON
-                                        &none               &kp EQUAL                &none           &none
+                   &ht_ndsh 0 MINUS  &kp STAR            &kp PLUS                 &kp CARET       &ht RA(N9) LPAR  &ht RA(N0) RPAR
+        &kp SLASH  &ht_mdsh 0 UNDER  &ht RA(QMARK) QMARK &kp EQUAL                &ht_deg 0 PRCNT &ht RA(LBKT) LT  &ht RA(RBKT) GT  &kp SEMICOLON
+                                     &none               &utf_nbsp                &kp COMMA       &kp DOT
       >;
     };
 
     sym2 {
       bindings = <
-                    &ht_ordf 0 AT   &ht_ordm 0 HASH    &ht RA(N5) DOLLAR             &kp AMPS    &ht RA(RS(LBKT)) LBRC   &ht RA(RS(RBKT)) RBRC
-         &kp GRAVE  &kp DQT         &ht_mdsh 0 UNDER   &kp BSLH                      &kp TILDE   &ht_deqt 0 LBKT         &ht RA(RS(LBKT)) RBKT   &ht_elli 0 COLON
-                                    &none              &utf_nbsp                     &none       &none
+                    &ht_ordf 0 AT   &ht_ordm 0 HASH       &ht RA(N5) DOLLAR             &kp AMPS    &ht RA(RS(LBKT)) LBRC   &ht RA(RS(RBKT)) RBRC
+         &kp BSLH   &kp GRAVE       &ht RA(RS(N1)) EXCL   &kp PIPE                      &kp TILDE   &ht_deqt 0 LBKT         &ht RA(RS(LBKT)) RBKT   &ht_elli 0 COLON
+                                    &none                 &utf_nbsp                     &kp COMMA   &kp DOT
       >;
     };
 
@@ -267,7 +254,7 @@
       bindings = <
                                 &ht EQUAL MINUS &hrm LCTL STAR &hrm LALT PLUS         &hrm LALT KP_N7  &hrm RCTL KP_N8  &ht_nbsp 0 KP_N9
         &ht LC(LA(LGUI)) SLASH  &kp KP_N3       &kp KP_N2      &kp KP_N1              &kp KP_N4        &kp KP_N5        &kp KP_N6         &mt RSHIFT ENTER
-                                                &none          &to AL1                &ht UNDER DOT    &ht_000 0 KP_N0
+                                                &none          &to AL1                &ht_000 0 KP_N0  &ht UNDER DOT
       >;
     };
 
