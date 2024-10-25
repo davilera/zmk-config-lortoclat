@@ -220,9 +220,9 @@
 
     i18n {
       bindings = <
-                         &type_o_grave        &kp RA(Y)           &type_ldotl              &kp RA(COMMA)   &kp RA(U)        &ht RA(P) RA(O)
-        &mt RSHIFTRA(J)  &ht_agrv RA(S) 0     &type_e_grave       &type_cio                &kp RA(N)       &kp RA(E)        &ht RA(Q) RA(A)  &mt RSHIFT RA(I)
-                                              &type_qumlaut       &type_qu                 &none           &none
+                          &type_o_grave        &kp RA(Y)           &type_ldotl              &kp RA(COMMA)   &kp RA(U)        &ht RA(P) RA(O)
+        &mt RSHIFT RA(J)  &ht_agrv RA(S) 0     &type_e_grave       &type_cio                &kp RA(N)       &kp RA(E)        &ht RA(Q) RA(A)  &mt RSHIFT RA(I)
+                                               &type_qumlaut       &type_qu                 &none           &none
       >;
     };
 
