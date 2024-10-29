@@ -117,12 +117,6 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&key_repeat>;
     };
-    key_space: key_space {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <250>;
-      bindings = <&ht LC(LA(LGUI)) SPC>, <&kp DOT>;
-    };
 
     // ---------------------------------------------------
     //    I18N - HOLDING UTF CHARS
@@ -207,6 +201,14 @@
       flavor = "tap-preferred";
       bindings = <&type_000>, <&kp>;
     };
+    ht_qu_i18n: ht_qu_i18n {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <HOLDTAP_TAPPING_TERM_MS>;
+      quick-tap-ms = <HOLDTAP_QUICK_TAP_MS>;
+      flavor = "tap-preferred";
+      bindings = <&type_qumlaut>, <&type_qu>;
+    };
   };
   keymap {
     compatible = "zmk,keymap";
@@ -214,7 +216,7 @@
       bindings = <
                       &hrm LGUI L       &hrm LCTL G         &hrm LALT D              &hrm  LALT H      &hrm  RCTL U      &hrm LGUI O
         &mt LSHIFT I  &htl SYM2 S       &htl SYM1 R         &htl SYS  T              &htl  SYS  N      &htl  SYM1 E      &htl SYM2 A      &mt RSHIFT C
-                                        &mo_rpt NUM 0       &key_space               &htl2 AL2  COMMA  &htl2 I18N DOT
+                                        &mo_rpt NUM 0       &ht LC(LA(LGUI)) SPC     &htl2 AL2  COMMA  &htl2 I18N DOT
       >;
     };
 
@@ -222,7 +224,7 @@
       bindings = <
                       &hrm LGUI V       &hrm LCTL W         &hrm LALT M              &hrm LALT F     &hrm RCTL DQT    &hrm LGUI Z
         &mt LSHIFT Q  &kp  J            &kp  P              &kp  K                   &kp B           &kp  SQT         &kp  X           &mt RSHIFT Y
-                                        &type_pr            &type_qu                 &none           &none
+                                        &type_qu            &ht LC(LA(LGUI)) SPC     &none           &none
       >;
     };
 
@@ -230,7 +232,7 @@
       bindings = <
                           &type_o_grave        &kp RA(Y)           &type_ldotl              &kp RA(COMMA)   &kp RA(U)        &ht RA(P) RA(O)
         &mt RSHIFT RA(J)  &ht_agrv RA(S) 0     &type_e_grave       &type_cio                &kp RA(N)       &kp RA(E)        &ht RA(Q) RA(A)  &mt RSHIFT RA(I)
-                                               &type_qumlaut       &type_qu                 &none           &none
+                                               &ht_qu_i18n 0 0     &kp SPACE                &none           &none
       >;
     };
 
@@ -252,17 +254,17 @@
 
     sys {
       bindings = <
-                    &kp DEL     &hrm LCTL LC(LS(TAB))   &hrm LALT ENTER              &kp BKSP        &ht HOME LEFT  &ht LS(PSCRN) PSCRN
-        &none       &kp TAB     &kp LC(TAB)             &kp ESC                      &ht PG_DN DOWN  &ht PG_UP UP   &ht END RIGHT        &kp RSHIFT
-                                &kp LC(C)               &kp LC(V)                    &kp LC(LS(V))   &kp LC(LS(C))
+                         &kp ESC     &hrm LCTL LC(LS(TAB))   &hrm LALT 0                &kp PSCRN       &ht HOME LEFT  &ht BKSP
+        &mt LSHIFT TAB   &kp DEL     &kp LC(TAB)             &none                      &ht PG_DN DOWN  &ht PG_UP UP   &ht END RIGHT        &mt RSHIFT ENTER
+                                     &kp LC(C)               &ht LC(LA(LGUI)) LC(V)     &none           &none
       >;
     };
 
     num {
       bindings = <
-                                &ht EQUAL MINUS &hrm LCTL STAR &hrm LALT PLUS         &hrm LALT KP_N7  &hrm RCTL KP_N8  &ht_nbsp 0 KP_N9
-        &ht LC(LA(LGUI)) SLASH  &kp KP_N3       &kp KP_N2      &kp KP_N1              &kp KP_N4        &kp KP_N5        &kp KP_N6         &mt RSHIFT ENTER
-                                                &none          &to AL1                &ht_000 0 KP_N0  &ht UNDER DOT
+                             &ht EQUAL MINUS &hrm LCTL STAR &hrm LALT PLUS         &hrm LALT KP_N7  &hrm RCTL KP_N8  &ht_nbsp 0 KP_N9
+        &mt RSHIFT SLASH     &kp KP_N3       &kp KP_N2      &kp KP_N1              &kp KP_N4        &kp KP_N5        &kp KP_N6         &mt RSHIFT ENTER
+                                             &to AL1        &ht LC(LA(LGUI)) SPC   &ht_000 0 KP_N0  &ht UNDER DOT
       >;
     };
 
