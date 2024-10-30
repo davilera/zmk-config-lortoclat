@@ -224,7 +224,7 @@
       bindings = <
                       &hrm LGUI V       &hrm LCTL W         &hrm LALT M              &hrm LALT F     &hrm RCTL DQT    &hrm LGUI Z
         &mt LSHIFT Q  &kp  J            &kp  P              &kp  K                   &kp B           &kp  SQT         &kp  X           &mt RSHIFT Y
-                                        &type_qu            &ht LC(LA(LGUI)) SPC     &none           &none
+                                        &type_qu            &type_comma_space        &none           &none
       >;
     };
 
@@ -232,7 +232,7 @@
       bindings = <
                           &type_o_grave        &kp RA(Y)           &type_ldotl              &kp RA(COMMA)   &kp RA(U)        &ht RA(P) RA(O)
         &mt RSHIFT RA(J)  &ht_agrv RA(S) 0     &type_e_grave       &type_cio                &kp RA(N)       &kp RA(E)        &ht RA(Q) RA(A)  &mt RSHIFT RA(I)
-                                               &ht_qu_i18n 0 0     &kp SPC                  &none           &none
+                                               &ht_qu_i18n 0 0     &type_dot_space          &none           &none
       >;
     };
 
@@ -254,9 +254,9 @@
 
     sys {
       bindings = <
-                         &kp ESC     &hrm LCTL LC(LS(TAB))   &hrm LALT 0                &kp PSCRN       &ht HOME LEFT  &kp BKSP
-        &mt LSHIFT TAB   &kp DEL     &kp LC(TAB)             &none                      &ht PG_DN DOWN  &ht PG_UP UP   &ht END RIGHT        &mt RSHIFT ENTER
-                                     &kp LC(C)               &ht LC(LA(LGUI)) LC(V)     &none           &none
+                         &kp ESC     &kp LC(LS(TAB))   &kp BKSP                   &kp BKSP        &ht HOME LEFT  &kp PSCRN
+        &mt LSHIFT TAB   &kp DEL     &kp LC(TAB)       &kp ENTER                  &ht PG_DN DOWN  &ht PG_UP UP   &ht END RIGHT      &none
+                                     &kp LC(C)         &ht LC(LA(LGUI)) LC(V)     &none           &none
       >;
     };
 
