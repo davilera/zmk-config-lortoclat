@@ -27,10 +27,10 @@
 
         i18n {
             bindings = <
-&none             &none             &none             &kp RA(N5)     &none  &none      &none  &kp RA(O)     &kp RA(U)     &kp RA(Y)
-&mt LSHIFT RA(N)  &kp RA(N9)        &kp RA(N0)        &kp RA(S)      &none  &none      &none  &kp RA(A)     &kp RA(E)     &mt RSHFT RA(I)
-&none             &kp RA(LS(LBKT))  &kp LS(RA(RBKT))  &kp RA(COMMA)  &none  &kp RA(Z)  &none  &kp RA(LBKT)  &kp RA(RBKT)  &kp RA(J)        &none
-&kp RA(GRAVE)     &kp RA(SQT)       &kp RA(DQT)       &none          &none  &none      &none  &none         &none         &none
+&none             &none             &none             &kp RA(N5)     &none      &none      &none  &kp RA(O)     &kp RA(U)     &kp RA(Y)
+&mt LSHIFT RA(N)  &kp RA(N9)        &kp RA(N0)        &kp RA(S)      &none      &none      &none  &kp RA(A)     &kp RA(E)     &mt RSHFT RA(I)
+&none             &kp RA(LS(LBKT))  &kp LS(RA(RBKT))  &kp RA(COMMA)  &none      &kp RA(Z)  &none  &kp RA(LBKT)  &kp RA(RBKT)  &kp RA(J)        &none
+&kp RA(GRAVE)     &kp RA(SQT)       &kp RA(DQT)       &none          &kp SPACE  &none      &none  &none         &none         &none
             >;
         };
 
