@@ -1,4 +1,4 @@
-if SHIELD_18TECLAT
+if SHIELD_LORTOCLAT
 
 config ZMK_BLE
 		default y
@@ -7,6 +7,6 @@ config ZMK_USB
 		default y
 
 config ZMK_KEYBOARD_NAME
-    default "18 TECLAT"
+    default "LORTOCLAT"
 
 endif
