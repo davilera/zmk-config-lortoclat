@@ -26,4 +26,5 @@
         &none          &none   &none   &none   &kp SPACE              &kp ENTER   &none   &none       &none     &none
       >;
     };
+	};
 };
