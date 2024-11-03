@@ -14,135 +14,187 @@
 
 / {
     macros {
-    ldots: ldots { // …
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp LC(LS(U)) >
-        , < &macro_wait_time 50 >
-        , < &macro_tap &kp N2 &kp N0 &kp N2 &kp N6 >
-        , < &macro_wait_time 20 >
-        , < &macro_tap &kp ENTER >;
-    };
-    femord: femord { // ª
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp LC(LS(U)) >
-        , < &macro_wait_time 50 >
-        , < &macro_tap &kp N0 &kp N0 &kp A &kp A >
-        , < &macro_wait_time 20 >
-        , < &macro_tap &kp ENTER >;
-    };
-    mascord: mascord { // º
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp LC(LS(U)) >
-        , < &macro_wait_time 50 >
-        , < &macro_tap &kp N0 &kp N0 &kp B &kp A >
-        , < &macro_wait_time 20 >
-        , < &macro_tap &kp ENTER >;
-    };
-    ndash: ndash { // —
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp LC(LS(U)) >
-        , < &macro_wait_time 50 >
-        , < &macro_tap &kp N2 &kp N0 &kp N1 &kp N3 >
-        , < &macro_wait_time 20 >
-        , < &macro_tap &kp ENTER >;
-    };
-    mdash: mdash { // —
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp LC(LS(U)) >
-        , < &macro_wait_time 50 >
-        , < &macro_tap &kp N2 &kp N0 &kp N1 &kp N4 >
-        , < &macro_wait_time 20 >
-        , < &macro_tap &kp ENTER >;
-    };
-    nbsp: nbsp {
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp LC(LS(U)) >
-        , < &macro_wait_time 50 >
-        , < &macro_tap &kp N0 &kp N0 &kp A &kp N0 >
-        , < &macro_wait_time 20 >
-        , < &macro_tap &kp ENTER >;
-    };
-    dequot: dequot { // „
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp LC(LS(U)) >
-        , < &macro_wait_time 50 >
-        , < &macro_tap &kp N2 &kp N0 &kp N1 &kp E >
-        , < &macro_wait_time 20 >
-        , < &macro_tap &kp ENTER >;
-    };
-    ldotl: ldotl { // l·l
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp L &kp LC(LS(U)) >
-        , < &macro_wait_time 50 >
-        , < &macro_tap &kp N0 &kp N0 &kp B &kp N7 >
-        , < &macro_wait_time 20 >
-        , < &macro_tap &kp ENTER >
-        , < &macro_tap &kp L >;
-    };
-    ograve: ograve { // ò
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp RA(GRAVE) &kp O >;
-    };
-    agrave: agrave { // à
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp RA(GRAVE) &kp A >;
-    };
-    egrave: egrave { // è
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp RA(GRAVE) &kp E >;
-    };
-    degree: degree { // °
-      compatible = "zmk,behavior-macro";
-      wait-ms = <0>;
-      tap-ms = <0>;
-      #binding-cells = <0>;
-      bindings
-        = < &macro_tap &kp RA(LS(N0)) &kp SPACE >;
-    };
+        ldots: ldots {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N2 &kp N0 &kp N2 &kp N6>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>;
+        };
+
+        femord: femord {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp A &kp A>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>;
+        };
+
+        mascord: mascord {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp B &kp A>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>;
+        };
+
+        ndash: ndash {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N2 &kp N0 &kp N1 &kp N3>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>;
+        };
+
+        mdash: mdash {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N2 &kp N0 &kp N1 &kp N4>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>;
+        };
+
+        nbsp: nbsp {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp A &kp N0>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>;
+        };
+
+        dequot: dequot {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N2 &kp N0 &kp N1 &kp E>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>;
+        };
+
+        ldotl: ldotl {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp L &kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp B &kp N7>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_tap>,
+                <&kp L>;
+        };
+
+        ograve: ograve {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(GRAVE) &kp O>;
+        };
+
+        agrave: agrave {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(GRAVE) &kp A>;
+        };
+
+        egrave: egrave {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(GRAVE) &kp E>;
+        };
+
+        degree: degree {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(LS(N0)) &kp SPACE>;
+        };
+
+        oumlaut: oumlaut {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(DQT) &kp O>;
+
+            label = "OUMLAUT";
+        };
+
+        aumlaut: aumlaut {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(DQT) &kp A>;
+
+            label = "AUMLAUT";
+        };
     };
 
     keymap {
@@ -159,10 +211,10 @@
 
         i18n {
             bindings = <
-&none             &none             &none             &kp RA(N5)     &none      &none      &none  &kp RA(O)     &kp RA(U)     &kp RA(Y)
-&mt LSHIFT RA(N)  &kp RA(N9)        &kp RA(N0)        &kp RA(S)      &none      &none      &none  &kp RA(A)     &kp RA(E)     &mt RSHFT RA(I)
-&none             &kp RA(LS(LBKT))  &kp LS(RA(RBKT))  &kp RA(COMMA)  &none      &kp RA(Z)  &none  &kp RA(LBKT)  &kp RA(RBKT)  &kp RA(J)        &none
-&kp RA(GRAVE)     &kp RA(SQT)       &kp RA(DQT)       &none          &kp SPACE  &none      &none  &none         &none         &none
+&none             &ldotl            &ldots            &kp RA(N5)     &none      &oumlaut   &ograve  &kp RA(O)     &kp RA(U)     &kp RA(Y)
+&mt LSHIFT RA(N)  &kp RA(N9)        &kp RA(N0)        &kp RA(S)      &none      &aumlaut   &agrave  &kp RA(A)     &kp RA(E)     &mt RSHFT RA(I)
+&dequot           &kp RA(LS(LBKT))  &kp LS(RA(RBKT))  &kp RA(COMMA)  &none      &kp RA(Z)  &egrave  &kp RA(LBKT)  &kp RA(RBKT)  &kp RA(J)        &nbsp
+&kp RA(GRAVE)     &kp RA(SQT)       &kp RA(DQT)       &none          &kp SPACE  &none      &none    &none         &none         &none
             >;
         };
 
