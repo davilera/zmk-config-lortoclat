@@ -220,10 +220,10 @@
 
         sym {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp EXCL   &kp AT     &kp HASH    &kp DOLLAR   &kp PERCENT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR   &kp RPAR
+&kp COLON  &kp LT     &kp EQUAL   &kp GT       &kp PLUS     &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp SEMI
+&kp GRAVE  &kp TILDE  &kp PIPE    &kp BSLH     &kp UNDER    &kp MINUS  &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC  &kp DEL
+&none      &none      &kp INSERT  &kp RS(TAB)  &kp TAB      &none      &none     &none     &none      &none
             >;
         };
 
