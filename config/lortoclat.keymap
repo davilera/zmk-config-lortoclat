@@ -229,10 +229,10 @@
 
         num {
             bindings = <
-&none  &none  &none  &none  &none      &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
-&none  &none  &none  &none  &none      &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
-&none  &none  &none  &none  &none      &none      &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH  &nbsp
-&to 0  &none  &none  &none  &kp SPACE  &kp ENTER  &kp KP_N0  &kp DOT    &kp EQUAL  &none
+&none      &none              &none  &none  &none  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
+&kp LSHFT  &kp LA(LG(LCTRL))  &none  &none  &none  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
+&none      &none              &none  &none  &none  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH  &nbsp
+&to 0      &none              &none  &none  &none  &kp ENTER  &kp KP_N0  &kp DOT    &kp EQUAL  &none
             >;
         };
 
