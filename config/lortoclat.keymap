@@ -13,6 +13,15 @@
 };
 
 / {
+    macros {
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp E &kp S &kp T>;
+            label = "TEST";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
