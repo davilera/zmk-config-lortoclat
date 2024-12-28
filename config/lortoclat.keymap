@@ -220,10 +220,10 @@
 
         sym {
             bindings = <
-&kp EXCL   &kp AT     &kp HASH    &kp DOLLAR   &kp PERCENT  &kp DEL  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR   &kp RPAR
-&kp COLON  &kp LT     &kp EQUAL   &kp GT       &kp PLUS     &none    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp SEMI
-&kp GRAVE  &kp TILDE  &kp PIPE    &kp BSLH     &kp UNDER    &none    &kp MINUS  &kp LBKT  &kp RBKT  &kp LBRC   &kp RBRC
-&none      &none      &kp INSERT  &kp RS(TAB)  &kp TAB               &none      &none     &none     &none      &none
+&kp EXCL   &kp AT     &kp HASH    &kp DOLLAR  &kp PERCENT  &kp DEL  &kp CARET    &kp AMPS  &kp STAR        &kp LPAR   &kp RPAR
+&kp COLON  &kp LT     &kp EQUAL   &kp GT      &kp PLUS     &kp DQT  &kp LEFT     &kp DOWN  &kp UP          &kp RIGHT  &kp SEMI
+&kp GRAVE  &kp TILDE  &kp PIPE    &kp BSLH    &kp UNDER    &none    &kp MINUS    &kp LBKT  &kp RBKT        &kp LBRC   &kp RBRC
+&none      &none      &caps_word  &none       &kp LS(I)             &kp LS(TAB)  &none     &sk LEFT_SHIFT  &none      &none
             >;
         };
 
@@ -238,9 +238,9 @@
 
         sys {
             bindings = <
-&sys_reset   &none  &none         &none         &none       &kp C_SLEEP  &none  &none  &none  &none  &none
-&none        &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &kp K_MUTE   &none  &none  &none  &none  &none
-&kp C_POWER  &none  &none         &none         &none       &none        &none  &none  &none  &none  &none
+&sys_reset   &none  &none         &kp K_MUTE    &none       &kp C_SLEEP  &none  &none  &none  &none  &none
+&none        &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &none        &none  &none  &none  &none  &none
+&bootloader  &none  &none         &none         &none       &kp C_POWER  &none  &none  &none  &none  &none
 &none        &none  &none         &none         &kp C_PLAY               &none  &none  &none  &none  &none
             >;
         };
