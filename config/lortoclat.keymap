@@ -195,6 +195,22 @@
 
             label = "AUMLAUT";
         };
+
+        ispace: macro_ispace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(I) &kp SPACE>;
+
+            label = "MACRO_ISPACE";
+        };
+
+        iapos: iapos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(I) &kp APOS>;
+
+            label = "IAPOS";
+        };
     };
 
     keymap {
@@ -223,7 +239,7 @@
 &kp EXCL   &kp AT     &kp HASH    &kp DOLLAR  &kp PERCENT  &kp DEL  &kp CARET    &kp AMPS  &kp STAR        &kp LPAR   &kp RPAR
 &kp COLON  &kp LT     &kp EQUAL   &kp GT      &kp PLUS     &kp DQT  &kp LEFT     &kp DOWN  &kp UP          &kp RIGHT  &kp SEMI
 &kp GRAVE  &kp TILDE  &kp PIPE    &kp BSLH    &kp UNDER    &none    &kp MINUS    &kp LBKT  &kp RBKT        &kp LBRC   &kp RBRC
-&none      &none      &caps_word  &none       &kp LS(I)             &kp LS(TAB)  &none     &sk LEFT_SHIFT  &none      &none
+&none      &none      &caps_word  &iapos      &ispace               &kp LS(TAB)  &none     &sk LEFT_SHIFT  &none      &none
             >;
         };
 
