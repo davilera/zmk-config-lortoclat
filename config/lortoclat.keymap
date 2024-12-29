@@ -227,19 +227,19 @@
 
         i18n {
             bindings = <
-&kp RA(EXCL)  &kp RA(COMMA)  &ldots        &kp RA(N5)    &none      &none  &none  &kp RA(Y)  &kp RA(U)      &kp RA(N9)  &kp RA(N0)
-&kp RA(I)     &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &none      &none  &none  &kp RA(N)  &kp RA(E)      &kp RA(A)   &kp RA(O)
-&kp RA(J)     &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &none      &none  &none  &egrave    &kp RA(SLASH)  &agrave     &ograve
-&none         &kp RA(SQT)    &kp RA(DQT)   &none         &kp SPACE         &none  &none      &none          &none       &none
+&kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &none      &none  &none  &kp RA(Y)  &kp RA(U)      &kp RA(N9)  &kp RA(N0)
+&kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &none      &none  &none  &kp RA(N)  &kp RA(E)      &kp RA(A)   &kp RA(O)
+&kp RA(J)      &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &none      &none  &none  &egrave    &kp RA(SLASH)  &agrave     &ograve
+&kp RA(GRAVE)  &kp RA(SQT)    &kp RA(DQT)   &ldots        &kp SPACE         &none  &none      &none          &none       &none
             >;
         };
 
         sym {
             bindings = <
-&kp EXCL   &kp AT     &kp HASH    &kp DOLLAR  &kp PERCENT  &kp DEL  &kp CARET    &kp AMPS  &kp STAR        &kp LPAR   &kp RPAR
-&kp COLON  &kp LT     &kp EQUAL   &kp GT      &kp PLUS     &kp DQT  &kp LEFT     &kp DOWN  &kp UP          &kp RIGHT  &kp SEMI
-&kp GRAVE  &kp TILDE  &kp PIPE    &kp BSLH    &kp UNDER    &none    &kp MINUS    &kp LBKT  &kp RBKT        &kp LBRC   &kp RBRC
-&none      &none      &caps_word  &iapos      &ispace               &kp LS(TAB)  &none     &sk LEFT_SHIFT  &none      &none
+&kp EXCL   &kp AT    &kp HASH    &kp DOLLAR  &kp PERCENT  &kp DEL  &kp CARET    &kp AMPS   &kp STAR        &kp LPAR   &kp RPAR
+&kp COLON  &kp LT    &kp EQUAL   &kp GT      &kp PLUS     &kp DQT  &kp LEFT     &kp DOWN   &kp UP          &kp RIGHT  &kp SEMI
+&kp LBKT   &kp RBKT  &kp BSLH    &kp PIPE    &kp UNDER    &none    &kp MINUS    &kp TILDE  &kp QUESTION    &kp LBRC   &kp RBRC
+&kp GRAVE  &none     &caps_word  &iapos      &ispace               &kp LS(TAB)  &none      &sk LEFT_SHIFT  &none      &none
             >;
         };
 
