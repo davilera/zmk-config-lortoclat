@@ -213,6 +213,15 @@
         };
     };
 
+    behaviors {
+        shift_caps: shift_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_CAPS";
+            #binding-cells = <0>;
+            bindings = <&sk LSHFT>, <&caps_word>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -236,10 +245,10 @@
 
         sym {
             bindings = <
-&kp EXCL   &kp AT    &kp HASH    &kp DOLLAR  &kp PERCENT  &kp DEL  &kp CARET    &kp AMPS   &kp STAR        &kp LPAR   &kp RPAR
-&kp COLON  &kp LT    &kp EQUAL   &kp GT      &kp PLUS     &kp DQT  &kp LEFT     &kp DOWN   &kp UP          &kp RIGHT  &kp SEMI
-&kp LBKT   &kp RBKT  &kp BSLH    &kp PIPE    &kp UNDER    &none    &kp MINUS    &kp TILDE  &kp QUESTION    &kp LBRC   &kp RBRC
-&kp GRAVE  &none     &caps_word  &iapos      &ispace               &kp LS(TAB)  &none      &sk LEFT_SHIFT  &none      &none
+&kp EXCL   &kp AT    &kp HASH     &kp DOLLAR  &kp PERCENT  &kp DEL  &kp CARET    &kp AMPS   &kp STAR      &kp LPAR   &kp RPAR
+&kp COLON  &kp LT    &kp EQUAL    &kp GT      &kp PLUS     &kp DQT  &kp LEFT     &kp DOWN   &kp UP        &kp RIGHT  &kp SEMI
+&kp LBKT   &kp RBKT  &kp BSLH     &kp PIPE    &kp UNDER    &none    &kp MINUS    &kp TILDE  &kp QUESTION  &kp LBRC   &kp RBRC
+&kp GRAVE  &none     &shift_caps  &iapos      &ispace               &kp LS(TAB)  &none      &shift_caps   &none      &none
             >;
         };
 
