@@ -202,10 +202,10 @@
 
         alpha {
             bindings = <
-&kp Y  &kp C     &kp L  &kp M      &kp K      &kp BSPC       &kp Z    &kp F                 &kp U      &kp COMMA  &kp SQT
-&kp I  &kp S     &kp R  &kp T      &kp G      &kp SEMICOLON  &kp P    &kp N                 &kp E      &kp A      &kp O
-&kp Q  &kp V     &kp W  &kp D      &kp J      &kp ASTERISK   &kp B    &kp H                 &kp SLASH  &kp DOT    &kp X
-&mo 3  &kp LALT  &mo 2  &kp LCTRL  &kp SPACE                 &kp TAB  &kp LS(LA(LC(LWIN)))  &mo 2      &mo 1      &mo 4
+&kp Y  &kp C     &kp L  &kp M      &kp K      &kp BSPC   &kp Z    &kp F                 &kp U      &kp COMMA  &kp SQT
+&kp I  &kp S     &kp R  &kp T      &kp G      &kp ENTER  &kp P    &kp N                 &kp E      &kp A      &kp O
+&kp Q  &kp V     &kp W  &kp D      &kp J      &kp ESC    &kp B    &kp H                 &kp SLASH  &kp DOT    &kp X
+&mo 3  &kp LALT  &mo 2  &kp LCTRL  &kp SPACE             &kp TAB  &kp LS(LA(LC(LWIN)))  &mo 2      &mo 1      &mo 4
             >;
         };
 
@@ -229,10 +229,10 @@
 
         sysnum {
             bindings = <
-&none      &none              &none  &none  &none  &none  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
-&kp LSHFT  &kp LA(LG(LCTRL))  &none  &none  &none  &none  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
-&none      &none              &none  &none  &none  &none  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
-&to 0      &none              &none  &none  &none         &kp ENTER  &kp KP_N0  &kp DOT    &kp EQUAL  &none
+&kp LC(N1)   &kp LC(N2)       &kp LC(N3)  &kp LC(N4)  &none   &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
+&kp LC(TAB)  &kp LC(LS(TAB))  &none       &none       &none   &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
+&kp LA(TAB)  &kp LA(LS(TAB))  &none       &none       &none   &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
+&to 0        &none            &none       &none       &trans          &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
             >;
         };
 
