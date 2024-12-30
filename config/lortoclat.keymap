@@ -225,7 +225,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        alpha {
+        isrt {
             bindings = <
 &kp Y  &kp C     &kp L  &kp M      &kp K      &kp BSPC   &kp Z    &kp F                 &kp U      &kp COMMA  &kp SQT
 &kp I  &kp S     &kp R  &kp T      &kp G      &kp ENTER  &kp P    &kp N                 &kp E      &kp A      &kp O
@@ -234,12 +234,12 @@
             >;
         };
 
-        i18n {
+        isrt_i18n {
             bindings = <
-&kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &none      &none  &none  &kp RA(Y)  &kp RA(U)      &kp RA(N9)  &kp RA(N0)
-&kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &none      &none  &none  &kp RA(N)  &kp RA(E)      &kp RA(A)   &kp RA(O)
-&kp RA(J)      &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &none      &none  &none  &egrave    &kp RA(SLASH)  &agrave     &ograve
-&kp RA(GRAVE)  &kp RA(SQT)    &kp RA(DQT)   &ldots        &kp SPACE         &none  &none      &none          &none       &none
+&kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &kp RA(N9)  &none  &none  &kp RA(Y)  &kp RA(U)      &agrave    &kp RA(N0)
+&kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &none       &none  &none  &kp RA(N)  &kp RA(E)      &kp RA(A)  &kp RA(O)
+&kp RA(J)      &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &none       &none  &none  &egrave    &kp RA(SLASH)  &ldots     &ograve
+&kp RA(GRAVE)  &kp RA(SQT)    &kp RA(DQT)   &none         &kp SPACE          &none  &none      &none          &none      &none
             >;
         };
 
@@ -266,7 +266,25 @@
 &sys_reset   &none  &none         &kp K_MUTE    &none       &kp C_SLEEP  &none  &none  &none  &none  &none
 &none        &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &none        &none  &none  &none  &none  &none
 &bootloader  &none  &none         &none         &none       &kp C_POWER  &none  &none  &none  &none  &none
-&none        &none  &none         &none         &kp C_PLAY               &none  &none  &none  &none  &none
+&none        &none  &to 5         &to 0         &kp C_PLAY               &none  &none  &none  &none  &none
+            >;
+        };
+
+        qwerty {
+            bindings = <
+&kp Q  &kp W     &kp E  &kp R      &kp T      &kp BSPC   &kp Y    &kp U                 &kp I      &kp O    &kp P
+&kp A  &kp S     &kp D  &kp F      &kp G      &kp ENTER  &kp H    &kp J                 &kp K      &kp L    &kp SEMI
+&kp Z  &kp X     &kp C  &kp V      &kp B      &kp ESC    &kp N    &kp M                 &kp COMMA  &kp DOT  &kp SLASH
+&mo 3  &kp LALT  &mo 2  &kp LCTRL  &kp SPACE             &kp TAB  &kp LS(LA(LC(LWIN)))  &mo 2      &mo 1    &mo 4
+            >;
+        };
+
+        qwerty_i18n {
+            bindings = <
+&kp RA(EXCL)   &none        &none         &kp RA(N5)    &kp RA(N9)  &none  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)  &kp RA(N0)
+&kp RA(A)      &kp RA(S)    &kp RA(LBKT)  &kp RA(RBKT)  &none       &none  &none      &kp RA(J)  &none          &ldotl     &ograve
+&agrave        &dequot      &kp RA(LBRC)  &kp RA(RBRC)  &none       &none  &none      &egrave    &kp RA(COMMA)  &ldots     &kp RC(SLASH)
+&kp RA(GRAVE)  &kp RA(SQT)  &kp RA(DQT)   &ldots        &kp SPACE          &none      &none      &none          &none      &none
             >;
         };
     };
