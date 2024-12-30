@@ -245,19 +245,19 @@
 
         sym {
             bindings = <
-&kp EXCL   &kp AT    &kp HASH     &kp DOLLAR  &kp PERCENT  &kp DEL  &kp CARET    &kp AMPS   &kp STAR      &kp LPAR   &kp RPAR
-&kp COLON  &kp LT    &kp EQUAL    &kp GT      &kp PLUS     &kp DQT  &kp LEFT     &kp DOWN   &kp UP        &kp RIGHT  &kp SEMI
-&kp LBKT   &kp RBKT  &kp BSLH     &kp PIPE    &kp UNDER    &none    &kp MINUS    &kp TILDE  &kp QUESTION  &kp LBRC   &kp RBRC
-&kp GRAVE  &none     &shift_caps  &iapos      &ispace               &kp LS(TAB)  &none      &shift_caps   &none      &none
+&kp EXCL   &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &kp DEL  &kp CARET  &kp AMPS   &kp STAR      &kp LPAR   &kp RPAR
+&kp COLON  &kp LT    &kp EQUAL  &kp GT      &kp PLUS     &kp DQT  &kp LEFT   &kp DOWN   &kp UP        &kp RIGHT  &kp SEMI
+&kp LBKT   &kp RBKT  &kp BSLH   &kp PIPE    &kp UNDER    &none    &kp MINUS  &kp TILDE  &kp QUESTION  &kp LBRC   &kp RBRC
+&kp GRAVE  &none     &none      &none       &none                 &none      &none      &none         &none      &none
             >;
         };
 
-        sysnum {
+        num {
             bindings = <
-&kp LC(N1)   &kp LC(N2)       &kp LC(N3)  &kp LC(N4)  &none   &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
-&kp LC(TAB)  &kp LC(LS(TAB))  &none       &none       &none   &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
-&kp LA(TAB)  &kp LA(LS(TAB))  &none       &none       &none   &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
-&to 0        &none            &none       &none       &trans          &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
+&kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp RC(N5)  &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
+&none       &none       &none       &kp LC(N0)  &none       &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
+&none       &none       &none       &none       &none       &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
+&none       &none       &none       &none       &trans              &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
             >;
         };
 
@@ -272,10 +272,10 @@
 
         qwerty {
             bindings = <
-&kp Q  &kp W     &kp E  &kp R      &kp T      &kp BSPC   &kp Y    &kp U                 &kp I      &kp O    &kp P
-&kp A  &kp S     &kp D  &kp F      &kp G      &kp ENTER  &kp H    &kp J                 &kp K      &kp L    &kp SEMI
-&kp Z  &kp X     &kp C  &kp V      &kp B      &kp ESC    &kp N    &kp M                 &kp COMMA  &kp DOT  &kp SLASH
-&mo 3  &kp LALT  &mo 2  &kp LCTRL  &kp SPACE             &kp TAB  &kp LS(LA(LC(LWIN)))  &mo 2      &mo 1    &mo 4
+&kp Q   &kp W   &kp E   &kp R   &kp T   &kp BSPC   &kp Y   &kp U   &kp I      &kp O    &kp P
+&kp A   &kp S   &kp D   &kp F   &kp G   &kp ENTER  &kp H   &kp J   &kp K      &kp L    &kp SEMI
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp ESC    &kp N   &kp M   &kp COMMA  &kp DOT  &kp SLASH
+&trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans     &trans   &trans
             >;
         };
 
@@ -284,8 +284,26 @@
 &kp RA(EXCL)   &none        &none         &kp RA(N5)    &kp RA(N9)  &none  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)  &kp RA(N0)
 &kp RA(A)      &kp RA(S)    &kp RA(LBKT)  &kp RA(RBKT)  &none       &none  &none      &kp RA(J)  &none          &ldotl     &ograve
 &agrave        &dequot      &kp RA(LBRC)  &kp RA(RBRC)  &none       &none  &none      &egrave    &kp RA(COMMA)  &ldots     &kp RC(SLASH)
-&kp RA(GRAVE)  &kp RA(SQT)  &kp RA(DQT)   &ldots        &kp SPACE          &none      &none      &none          &none      &none
+&kp RA(GRAVE)  &kp RA(SQT)  &kp RA(DQT)   &none         &kp SPACE          &none      &none      &none          &none      &none
             >;
+        };
+
+        qwerty_sym {
+            bindings = <
+&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SQT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON
+&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        qwerty_sym {
+            if-layers = <5 2>;
+            then-layer = <7>;
         };
     };
 };
