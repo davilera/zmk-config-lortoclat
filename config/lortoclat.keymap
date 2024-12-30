@@ -227,10 +227,10 @@
 
         isrt {
             bindings = <
-&kp Y  &kp C     &kp L  &kp M      &kp K      &kp BSPC   &kp Z    &kp F                 &kp U      &kp COMMA  &kp SQT
-&kp I  &kp S     &kp R  &kp T      &kp G      &kp ENTER  &kp P    &kp N                 &kp E      &kp A      &kp O
-&kp Q  &kp V     &kp W  &kp D      &kp J      &kp ESC    &kp B    &kp H                 &kp SLASH  &kp DOT    &kp X
-&mo 3  &kp LALT  &mo 2  &kp LCTRL  &kp SPACE             &kp TAB  &kp LS(LA(LC(LWIN)))  &mo 2      &mo 1      &mo 4
+&kp Y    &kp C     &kp L      &kp M  &kp K      &kp BSPC   &kp Z     &kp F  &kp U       &kp COMMA  &kp SQT
+&kp I    &kp S     &kp R      &kp T  &kp G      &kp ENTER  &kp P     &kp N  &kp E       &kp A      &kp O
+&kp Q    &kp V     &kp W      &kp D  &kp J      &kp ESC    &kp B     &kp H  &kp SLASH   &kp DOT    &kp X
+&kp TAB  &kp LALT  &kp LCTRL  &mo 2  &kp SPACE             &kp LGUI  &mo 2  &kp LSHIFT  &mo 1      &mo 4
             >;
         };
 
@@ -266,7 +266,7 @@
 &sys_reset   &none  &none         &kp K_MUTE    &none       &kp C_SLEEP  &none  &none  &none  &none  &none
 &none        &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &none        &none  &none  &none  &none  &none
 &bootloader  &none  &none         &none         &none       &kp C_POWER  &none  &none  &none  &none  &none
-&none        &none  &to 5         &to 0         &kp C_PLAY               &none  &none  &none  &none  &none
+&none        &none  &to 6         &to 0         &kp C_PLAY               &none  &none  &none  &none  &none
             >;
         };
 
