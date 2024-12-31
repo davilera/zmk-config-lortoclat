@@ -237,7 +237,7 @@
 
         caps_word {
             bindings = <&caps_word>;
-            key-positions = <11 21>;
+            key-positions = <33 34>;
         };
     };
 
