@@ -227,10 +227,10 @@
 
         isrt {
             bindings = <
-&kp Y    &kp C     &kp L  &kp M      &kp K      &kp BSPC   &kp Z     &kp F  &kp U       &kp COMMA  &kp SQT
-&kp I    &kp S     &kp R  &kp T      &kp G      &kp ENTER  &kp P     &kp N  &kp E       &kp A      &kp O
-&kp Q    &kp V     &kp W  &kp D      &kp J      &kp ESC    &kp B     &kp H  &kp SLASH   &kp DOT    &kp X
-&kp TAB  &kp LALT  &mo 3  &kp LCTRL  &kp SPACE             &kp LGUI  &mo 2  &kp LSHIFT  &mo 1      &mo 4
+&kp Y        &kp C     &kp L  &kp M      &kp K      &kp BSPC   &kp Z     &kp F  &kp U       &kp COMMA  &kp SQT
+&mt I LSHFT  &kp S     &kp R  &kp T      &kp G      &kp ENTER  &kp P     &kp N  &kp E       &kp A      &mt O RSHFT
+&kp Q        &kp V     &kp W  &kp D      &kp J      &kp ESC    &kp B     &kp H  &kp SLASH   &kp DOT    &kp X
+&kp TAB      &kp LALT  &mo 3  &kp LCTRL  &kp SPACE             &kp LGUI  &mo 2  &kp LSHIFT  &mo 1      &mo 4
             >;
         };
 
@@ -272,10 +272,10 @@
 
         qwerty {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T   &kp BSPC   &kp Y   &kp U   &kp I      &kp O    &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &kp ENTER  &kp H   &kp J   &kp K      &kp L    &kp SEMI
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp ESC    &kp N   &kp M   &kp COMMA  &kp DOT  &kp SLASH
-&trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans     &trans   &trans
+&kp Q        &kp W   &kp E   &kp R   &kp T   &kp BSPC   &kp Y   &kp U   &kp I      &kp O    &kp P
+&mt A LSHFT  &kp S   &kp D   &kp F   &kp G   &kp ENTER  &kp H   &kp J   &kp K      &kp L    &mt SEMI RSHFT
+&kp Z        &kp X   &kp C   &kp V   &kp B   &kp ESC    &kp N   &kp M   &kp COMMA  &kp DOT  &kp SLASH
+&trans       &trans  &trans  &trans  &trans             &trans  &trans  &trans     &trans   &trans
             >;
         };
 
