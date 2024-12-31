@@ -220,6 +220,25 @@
             #binding-cells = <0>;
             bindings = <&sk LSHFT>, <&caps_word>;
         };
+
+        hkp: hkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HKP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <11 21>;
+        };
     };
 
     keymap {
@@ -227,10 +246,10 @@
 
         isrt {
             bindings = <
-&kp Y        &kp C     &kp L  &kp M      &kp K      &kp BSPC   &kp Z    &kp F     &kp U      &kp COMMA  &kp SQT
-&mt I LSHFT  &kp S     &kp R  &kp T      &kp G      &kp ENTER  &kp P    &kp N     &kp E      &kp A      &mt O RSHFT
-&kp Q        &kp V     &kp W  &kp D      &kp J      &kp ESC    &kp B    &kp H     &kp SLASH  &kp DOT    &kp X
-&mo 3        &kp LALT  &mo 2  &kp LCTRL  &kp SPACE             &kp TAB  &kp LGUI  &mo 2      &mo 1      &mo 4
+&hkp N1 Y    &hkp N2 C  &hkp N3 L  &hkp N4 M  &hkp N5 K  &kp BSPC   &hkp N6 Z  &hkp N7 F  &hkp N8 U  &hkp N9 COMMA  &hkp N0 SQT
+&mt I LSHFT  &kp S      &kp R      &kp T      &kp G      &kp ENTER  &kp P      &kp N      &kp E      &kp A          &mt O RSHFT
+&kp Q        &kp V      &kp W      &kp D      &kp J      &kp ESC    &kp B      &kp H      &kp SLASH  &kp DOT        &kp X
+&mo 3        &kp LALT   &mo 2      &kp LCTRL  &kp SPACE             &kp TAB    &kp LGUI   &mo 2      &mo 1          &mo 4
             >;
         };
 
