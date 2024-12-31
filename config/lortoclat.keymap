@@ -228,7 +228,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <201>;
         };
     };
 
@@ -291,10 +291,10 @@
 
         qwerty {
             bindings = <
-&kp Q        &kp W   &kp E   &kp R   &kp T   &kp BSPC   &kp Y   &kp U   &kp I      &kp O    &kp P
-&mt LSHFT A  &kp S   &kp D   &kp F   &kp G   &kp ENTER  &kp H   &kp J   &kp K      &kp L    &mt LSHFT SEMI
-&kp Z        &kp X   &kp C   &kp V   &kp B   &kp ESC    &kp N   &kp M   &kp COMMA  &kp DOT  &kp SLASH
-&trans       &trans  &trans  &trans  &trans             &trans  &trans  &trans     &trans   &trans
+&hkp N1 Q    &hkp N2 W  &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC   &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O  &hkp P N0
+&mt LSHFT A  &kp S      &kp D      &kp F      &kp G      &kp ENTER  &kp H      &kp J      &kp K      &kp L      &mt LSHFT SEMI
+&kp Z        &kp X      &kp C      &kp V      &kp B      &kp ESC    &kp N      &kp M      &kp COMMA  &kp DOT    &kp SLASH
+&trans       &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans
             >;
         };
 
