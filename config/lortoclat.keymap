@@ -249,7 +249,7 @@
 &hkp N1 Y    &hkp N2 C  &hkp N3 L  &hkp N4 D  &hkp N5 K  &kp BSPC   &hkp N6 Z  &hkp N7 F  &hkp N8 U  &hkp N9 COMMA  &hkp N0 SQT
 &mt LSHFT I  &kp S      &kp R      &kp T      &kp G      &kp ENTER  &kp P      &kp N      &kp E      &kp A          &mt LSHFT O
 &kp Q        &kp V      &kp W      &kp M      &kp J      &kp ESC    &kp B      &kp H      &kp SLASH  &kp DOT        &kp X
-&mo 3        &mo 2      &kp LGUI   &kp LCTRL  &kp SPACE             &kp TAB    &kp LALT   &mo 1      &mo 2          &mo 4
+&mo 3        &kp LGUI   &kp LCTRL  &mo 2      &kp SPACE             &kp TAB    &mo 2      &mo 1      &kp LALT       &mo 4
             >;
         };
 
