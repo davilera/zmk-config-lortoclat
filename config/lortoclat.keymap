@@ -265,8 +265,8 @@
         sym {
             bindings = <
 &kp EXCL   &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &kp DEL    &kp CARET    &kp AMPS   &kp STAR      &kp LPAR  &kp RPAR
-&kp COLON  &kp LT    &kp EQUAL  &kp GT      &kp PLUS     &kp LEFT   &kp GRAVE    &kp DOWN   &kp UP        &kp DQT   &kp SEMI
-&kp LBKT   &kp RBKT  &kp BSLH   &kp PIPE    &kp UNDER    &kp RIGHT  &kp MINUS    &kp TILDE  &kp QUESTION  &kp LBRC  &kp RBRC
+&kp COLON  &kp LT    &kp EQUAL  &kp GT      &kp PLUS     &kp LEFT   &kp MINUS    &kp DOWN   &kp UP        &kp DQT   &kp SEMI
+&kp LBKT   &kp RBKT  &kp BSLH   &kp PIPE    &kp GRAVE    &kp RIGHT  &kp UNDER    &kp TILDE  &kp QUESTION  &kp LBRC  &kp RBRC
 &none      &none     &none      &none       &none                   &kp LS(TAB)  &kp LEFT   &kp DOWN      &kp UP    &kp RIGHT
             >;
         };
