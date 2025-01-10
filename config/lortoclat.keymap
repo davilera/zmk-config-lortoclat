@@ -255,10 +255,10 @@
 
         i18n {
             bindings = <
-&kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &kp RA(N9)  &none  &none   &kp RA(Y)  &kp RA(U)      &agrave    &kp RA(N0)
-&kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &none       &none  &ndash  &kp RA(N)  &kp RA(E)      &kp RA(A)  &kp RA(O)
-&kp RA(J)      &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &none       &none  &mdash  &egrave    &kp RA(SLASH)  &ldots     &ograve
-&kp RA(GRAVE)  &kp RA(SQT)    &kp RA(DQT)   &none         &kp SPACE          &none   &none      &none          &none      &none
+&kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &kp RA(N9)  &none  &kp RA(N0)  &kp RA(Y)  &kp RA(U)  &agrave    &ograve
+&kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &mascord    &none  &ndash      &kp RA(N)  &kp RA(E)  &kp RA(A)  &kp RA(O)
+&kp RA(J)      &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &femord     &none  &mdash      &degree    &egrave    &ldots     &kp RA(SLASH)
+&kp RA(GRAVE)  &kp RA(SQT)    &kp RA(DQT)   &none         &kp SPACE          &none       &none      &none      &none      &none
             >;
         };
 
