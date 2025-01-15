@@ -249,25 +249,25 @@
 &hkp N1 Y    &hkp N2 C  &hkp N3 L  &hkp N4 D  &hkp N5 K  &kp BSPC   &hkp N6 Z  &hkp N7 F  &hkp N8 U  &hkp N9 COMMA  &hkp N0 SQT
 &mt LSHFT I  &kp S      &kp R      &kp T      &kp G      &kp ENTER  &kp P      &kp N      &kp E      &kp A          &mt LSHFT O
 &kp Q        &kp V      &kp W      &kp M      &kp J      &kp ESC    &kp B      &kp H      &kp SLASH  &kp DOT        &kp X
-&mo 3        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE             &mo 2      &kp TAB    &mo 1      &kp LALT       &mo 4
+&mo 4        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &mo 2      &mo 1      &kp LALT       &to 3
             >;
         };
 
         i18n {
             bindings = <
-&kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &kp RA(N9)  &none  &kp RA(N0)  &kp RA(Y)  &kp RA(U)  &agrave    &ograve
-&kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &mascord    &none  &ndash      &kp RA(N)  &kp RA(E)  &kp RA(A)  &kp RA(O)
-&kp RA(J)      &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &femord     &none  &mdash      &degree    &egrave    &ldots     &kp RA(SLASH)
-&kp RA(GRAVE)  &kp RA(SQT)    &kp RA(DQT)   &none         &kp SPACE          &none       &none      &none      &none      &none
+&kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &kp RA(N9)  &trans  &kp RA(N0)  &kp RA(Y)  &kp RA(U)  &agrave    &ograve
+&kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &ndash      &trans  &mascord    &kp RA(N)  &kp RA(E)  &kp RA(A)  &kp RA(O)
+&kp RA(J)      &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &mdash      &trans  &femord     &degree    &egrave    &ldots     &kp RA(SLASH)
+&kp RA(GRAVE)  &kp RA(SQT)    &kp RA(DQT)   &none         &kp SPACE           &none       &none      &none      &none      &none
             >;
         };
 
         sym {
             bindings = <
-&kp EXCL       &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &kp DEL    &kp CARET    &kp AMPS  &kp STAR  &kp LPAR   &kp RPAR
-&kp COLON      &kp LT    &kp EQUAL  &kp GT      &kp PLUS     &kp LEFT   &kp MINUS    &kp DOWN  &kp UP    &kp DQT    &kp SEMI
-&kp BACKSLASH  &kp PIPE  &kp LBKT   &kp RBKT    &kp GRAVE    &kp RIGHT  &kp TILDE    &kp RBRC  &kp LBRC  &kp UNDER  &kp QMARK
-&none          &none     &none      &none       &none                   &kp LS(TAB)  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT
+&kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT  &trans  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR
+&kp LT     &kp MINUS  &kp EQUAL  &kp GT      &ndash       &trans  &kp COLON  &kp DQT   &kp LBKT  &kp RBKT  &kp SEMI
+&kp TILDE  &kp UNDER  &kp GRAVE  &kp PLUS    &mdash       &trans  &kp BSLH   &kp PIPE  &kp LBRC  &kp RBRC  &kp QMARK
+&none      &none      &none      &none       &trans               &none      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
             >;
         };
 
@@ -276,16 +276,16 @@
 &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp RC(N5)  &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
 &kp LC(N6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)  &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
 &none       &none       &none       &none       &none       &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
-&none       &none       &none       &none       &trans              &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
+&none       &none       &none       &none       &trans              &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &to 0
             >;
         };
 
         fn {
             bindings = <
-&sys_reset   &none  &none         &kp K_MUTE    &none       &kp C_SLEEP  &none  &none  &none  &none  &none
-&none        &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &none        &none  &none  &none  &none  &none
-&bootloader  &none  &none         &none         &none       &kp C_POWER  &none  &none  &none  &none  &none
-&none        &none  &to 5         &to 0         &kp C_PLAY               &none  &none  &none  &none  &none
+&sys_reset   &none  &none         &kp K_MUTE    &none       &none  &none     &none     &none   &none      &none
+&none        &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+&bootloader  &none  &none         &none         &none       &none  &none     &none     &none   &none      &none
+&none        &none  &to 5         &to 0         &kp C_PLAY         &none     &kp HOME  &none   &none      &kp END
             >;
         };
 
