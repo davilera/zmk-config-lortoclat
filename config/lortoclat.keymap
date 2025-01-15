@@ -273,19 +273,19 @@
 
         num {
             bindings = <
-&kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp RC(N5)  &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
-&kp LC(N6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)  &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
-&none       &none       &none       &none       &none       &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
-&to 0       &none       &none       &none       &trans              &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
+&none  &none  &none  &none  &none   &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
+&none  &none  &none  &none  &none   &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
+&none  &none  &none  &none  &none   &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
+&none  &none  &to 5  &to 0  &trans          &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
             >;
         };
 
         fn {
             bindings = <
-&sys_reset   &none  &none         &kp K_MUTE    &none       &none  &none     &none     &none   &none      &none
-&none        &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-&bootloader  &none  &none         &none         &none       &none  &none     &none     &none   &none      &none
-&none        &none  &to 5         &to 0         &kp C_PLAY         &none     &kp HOME  &none   &none      &kp END
+&sys_reset   &none  &none         &kp K_MUTE    &none       &kp DEL  &none     &none     &none   &none      &none
+&none        &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &none    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+&bootloader  &none  &none         &none         &none       &none    &none     &none     &none   &none      &none
+&none        &none  &to 5         &to 0         &kp C_PLAY           &none     &kp HOME  &none   &none      &kp END
             >;
         };
 
