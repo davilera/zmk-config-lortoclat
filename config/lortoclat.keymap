@@ -253,7 +253,7 @@
             >;
         };
 
-        i18n {
+        isrt_i18n {
             bindings = <
 &kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &kp RA(N9)  &trans  &kp RA(N0)  &kp RA(Y)  &kp RA(U)  &agrave    &ograve
 &kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &ndash      &trans  &mascord    &kp RA(N)  &kp RA(E)  &kp RA(A)  &kp RA(O)
@@ -264,10 +264,10 @@
 
         sym {
             bindings = <
-&kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT  &trans  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR
-&kp LT     &kp MINUS  &kp EQUAL  &kp GT      &ndash       &trans  &kp COLON  &kp DQT   &kp LBKT  &kp RBKT  &kp SEMI
-&kp TILDE  &kp UNDER  &kp GRAVE  &kp PLUS    &mdash       &trans  &kp BSLH   &kp PIPE  &kp LBRC  &kp RBRC  &kp QMARK
-&none      &none      &none      &none       &trans               &none      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
+&kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT  &trans  &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR
+&kp LT     &kp MINUS  &kp EQUAL  &kp GT      &ndash       &trans  &kp DQT    &kp COLON  &kp SEMI   &kp LBKT  &kp RBKT
+&kp TILDE  &kp UNDER  &kp GRAVE  &kp PLUS    &mdash       &trans  &kp BSLH   &kp PIPE   &kp QMARK  &kp LBRC  &kp RBRC
+&none      &none      &none      &none       &trans               &none      &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT
             >;
         };
 
@@ -300,10 +300,10 @@
 
         qwerty_i18n {
             bindings = <
-&kp RA(EXCL)   &egrave      &kp RA(E)     &kp RA(N5)    &kp RA(N9)  &none  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)  &kp RA(N0)
-&kp RA(A)      &kp RA(S)    &kp RA(LBKT)  &kp RA(RBKT)  &none       &none  &none      &kp RA(J)  &none          &ldotl     &ograve
-&agrave        &dequot      &kp RA(LBRC)  &kp RA(RBRC)  &none       &none  &kp RA(N)  &none      &kp RA(COMMA)  &ldots     &kp RC(SLASH)
-&kp RA(GRAVE)  &kp RA(SQT)  &kp RA(DQT)   &none         &kp SPACE          &none      &none      &none          &none      &none
+&kp RA(EXCL)   &egrave      &kp RA(E)     &kp RA(N5)    &kp RA(N9)  &trans  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)  &kp RA(N0)
+&kp RA(A)      &kp RA(S)    &kp RA(LBKT)  &kp RA(RBKT)  &mascord    &trans  &degree    &kp RA(J)  &none          &ldotl     &ograve
+&agrave        &dequot      &kp RA(LBRC)  &kp RA(RBRC)  &femord     &trans  &kp RA(N)  &none      &kp RA(COMMA)  &ldots     &kp RC(SLASH)
+&kp RA(GRAVE)  &kp RA(SQT)  &kp RA(DQT)   &none         &kp SPACE           &none      &none      &none          &none      &none
             >;
         };
 
