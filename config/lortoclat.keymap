@@ -266,7 +266,7 @@
             bindings = <
 &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT  &trans  &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR
 &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &ndash       &trans  &kp DQT    &kp COLON  &kp SEMI   &kp LBKT  &kp RBKT
-&kp TILDE  &kp UNDER  &kp GRAVE  &kp PLUS    &mdash       &trans  &kp BSLH   &kp PIPE   &kp QMARK  &kp LBRC  &kp RBRC
+&kp TILDE  &kp GRAVE  &kp UNDER  &kp PLUS    &mdash       &trans  &kp BSLH   &kp PIPE   &kp QMARK  &kp LBRC  &kp RBRC
 &none      &none      &none      &none       &trans               &none      &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT
             >;
         };
