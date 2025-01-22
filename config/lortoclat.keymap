@@ -231,11 +231,11 @@
             tapping-term-ms = <201>;
         };
 
-        mo_num_to_num: mo_num_to_num {
+        mo_fn_to_num: mo_fn_to_num {
             compatible = "zmk,behavior-tap-dance";
-            label = "MO_NUM_TO_NUM";
+            label = "MO_FN_TO_NUM";
             #binding-cells = <0>;
-            bindings = <&mo 3>, <&to 3>;
+            bindings = <&mo 4>, <&to 3>;
         };
     };
 
@@ -256,7 +256,7 @@
 &hkp N1 Y    &hkp N2 C  &hkp N3 L  &hkp N4 D  &hkp N5 K  &kp BSPC   &hkp N6 Z  &hkp N7 F  &hkp N8 U  &hkp N9 COMMA  &hkp N0 SQT
 &mt LSHFT I  &kp S      &lt 2 R    &lt 2 T    &kp G      &kp ENTER  &kp P      &lt 2 N    &lt 2 E    &kp A          &mt LSHFT O
 &kp Q        &kp V      &kp W      &kp M      &kp J      &kp ESC    &kp B      &kp H      &kp SLASH  &kp DOT        &kp X
-&mo 4        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &mo 2      &mo 1      &kp LALT       &mo_num_to_num
+&mo 4        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &mo 2      &mo 1      &kp LALT       &mo_fn_to_num
             >;
         };
 
