@@ -251,21 +251,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        isrt {
+        qwerty {
             bindings = <
-&hkp N1 Y    &hkp N2 C  &hkp N3 L  &hkp N4 D  &hkp N5 K  &kp BSPC   &hkp N6 Z  &hkp N7 F  &hkp N8 U  &hkp N9 COMMA  &hkp N0 SQT
-&mt LSHFT I  &kp S      &lt 2 R    &lt 2 T    &kp G      &kp ENTER  &kp P      &lt 2 N    &lt 2 E    &kp A          &mt LSHFT O
-&kp Q        &kp V      &kp W      &kp M      &kp J      &kp ESC    &kp B      &kp H      &kp SLASH  &kp DOT        &kp X
-&mo 4        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &mo 2      &mo 1      &kp LALT       &mo_fn_to_num
+&hkp N1 Q    &hkp N2 W    &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC   &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O    &hkp N0 P
+&mt LSHFT A  &mt LSHFT S  &lt 2 D    &lt 2 F    &kp G      &kp ENTER  &kp H      &lt 2 J    &lt 2 K    &mt LSHFT L  &mt LSHFT SEMI
+&kp Z        &kp X        &kp C      &kp V      &kp B      &kp ESC    &kp N      &kp M      &kp COMMA  &kp DOT      &kp FSLH
+&mo 4        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &mo 2      &mo 1      &kp LALT     &mo_fn_to_num
             >;
         };
 
-        isrt_i18n {
+        i18n {
             bindings = <
-&kp RA(EXCL)   &kp RA(COMMA)  &ldotl        &kp RA(N5)    &kp RA(N9)  &trans  &kp RA(N0)  &kp RA(Y)  &kp RA(U)  &agrave    &ograve
-&kp RA(I)      &kp RA(S)      &kp RA(LBKT)  &kp RA(RBKT)  &ndash      &trans  &mascord    &kp RA(N)  &kp RA(E)  &kp RA(A)  &kp RA(O)
-&kp RA(J)      &dequot        &kp RA(LBRC)  &kp RA(RBRC)  &mdash      &trans  &femord     &degree    &egrave    &ldots     &kp RA(SLASH)
-&kp RA(GRAVE)  &kp RA(SQT)    &kp RA(DQT)   &none         &kp SPACE           &none       &none      &none      &none      &none
+&kp RA(EXCL)   &egrave      &kp RA(E)     &kp RA(N5)    &kp RA(N9)  &trans  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)  &kp RA(N0)
+&kp RA(A)      &kp RA(S)    &kp RA(LBKT)  &kp RA(RBKT)  &mascord    &trans  &degree    &kp RA(J)  &ndash         &ldotl     &ograve
+&agrave        &dequot      &kp RA(LBRC)  &kp RA(RBRC)  &femord     &trans  &kp RA(N)  &mdash     &kp RA(COMMA)  &ldots     &kp RC(SLASH)
+&kp RA(GRAVE)  &kp RA(SQT)  &kp RA(DQT)   &none         &trans              &none      &none      &none          &none      &none
             >;
         };
 
@@ -283,7 +283,7 @@
 &none  &none  &none  &none  &none   &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
 &none  &none  &none  &none  &none   &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
 &none  &none  &none  &none  &none   &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
-&none  &none  &to 5  &to 0  &trans          &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
+&none  &none  &none  &to 0  &trans          &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
             >;
         };
 
@@ -292,49 +292,10 @@
 &sys_reset   &none  &none         &kp K_MUTE    &none       &kp DEL  &none     &none     &none      &none      &none
 &kp LSHFT    &none  &kp C_VOL_UP  &kp C_VOL_DN  &none       &none    &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &none
 &bootloader  &none  &none         &none         &none       &none    &none     &none     &none      &none      &none
-&none        &none  &to 5         &to 0         &kp C_PLAY           &none     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
-            >;
-        };
-
-        qwerty {
-            bindings = <
-&hkp N1 Q    &hkp N2 W  &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC   &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O  &hkp N0 P
-&mt LSHFT A  &kp S      &kp D      &kp F      &kp G      &kp ENTER  &kp H      &kp J      &kp K      &kp L      &mt LSHFT SEMI
-&kp Z        &kp X      &kp C      &kp V      &kp B      &kp ESC    &kp N      &kp M      &kp COMMA  &kp DOT    &kp SLASH
-&trans       &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans
-            >;
-        };
-
-        qwerty_i18n {
-            bindings = <
-&kp RA(EXCL)   &egrave      &kp RA(E)     &kp RA(N5)    &kp RA(N9)  &trans  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)  &kp RA(N0)
-&kp RA(A)      &kp RA(S)    &kp RA(LBKT)  &kp RA(RBKT)  &mascord    &trans  &degree    &kp RA(J)  &none          &ldotl     &ograve
-&agrave        &dequot      &kp RA(LBRC)  &kp RA(RBRC)  &femord     &trans  &kp RA(N)  &none      &kp RA(COMMA)  &ldots     &kp RC(SLASH)
-&kp RA(GRAVE)  &kp RA(SQT)  &kp RA(DQT)   &none         &kp SPACE           &none      &none      &none          &none      &none
-            >;
-        };
-
-        qwerty_sym {
-            bindings = <
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp SQT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none        &none  &none         &none         &kp C_PLAY           &none     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        qwerty_sym {
-            if-layers = <5 2>;
-            then-layer = <7>;
-        };
-
-        qwerty_i18n {
-            if-layers = <5 1>;
-            then-layer = <6>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
