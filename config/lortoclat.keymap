@@ -214,13 +214,6 @@
     };
 
     behaviors {
-        shift_caps: shift_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_CAPS";
-            #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&caps_word>;
-        };
-
         hkp: hkp {
             compatible = "zmk,behavior-hold-tap";
             label = "HKP";
@@ -231,11 +224,11 @@
             tapping-term-ms = <201>;
         };
 
-        mo_fn_to_num: mo_fn_to_num {
+        tcaps_ttnum: tcaps_ttnum {
             compatible = "zmk,behavior-tap-dance";
-            label = "MO_FN_TO_NUM";
+            label = "TCAPS_TTNUM";
             #binding-cells = <0>;
-            bindings = <&mo 4>, <&to 3>;
+            bindings = <&caps_word>, <&to 3>;
         };
     };
 
@@ -256,7 +249,7 @@
 &hkp N1 Q    &hkp N2 W    &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC   &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O    &hkp N0 P
 &mt LSHFT A  &mt LSHFT S  &lt 2 D    &lt 2 F    &kp G      &kp ENTER  &kp H      &lt 2 J    &lt 2 K    &mt LSHFT L  &mt LSHFT SEMI
 &kp Z        &kp X        &kp C      &kp V      &kp B      &kp ESC    &kp N      &kp M      &kp COMMA  &kp DOT      &kp FSLH
-&mo 4        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &mo 2      &mo 1      &kp LALT     &mo_fn_to_num
+&mo 4        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &mo 2      &mo 1      &kp LALT     &tcaps_ttnum
             >;
         };
 
