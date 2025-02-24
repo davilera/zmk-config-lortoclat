@@ -242,7 +242,7 @@
 &hkp N1 Q    &hkp N2 W    &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC   &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O    &hkp N0 P
 &mt LSHFT A  &mt LSHFT S  &lt 2 D    &lt 2 F    &kp G      &kp ENTER  &kp H      &lt 2 J    &lt 2 K    &mt LSHFT L  &mt LSHFT SEMI
 &kp Z        &kp X        &kp C      &kp V      &kp B      &kp ESC    &kp N      &kp M      &kp COMMA  &kp DOT      &kp FSLH
-&mo 4        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &lt 2 SQT  &mo 1      &kp LALT     &caps_word
+&mo 4        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp ENTER  &lt 2 SQT  &mo 1      &kp LALT     &caps_word
             >;
         };
 
@@ -278,7 +278,7 @@
 &mo 3        &to 3       &none         &kp K_MUTE    &none       &kp DEL  &none     &none     &none      &none      &none
 &kp LSHFT    &none       &kp C_VOL_UP  &kp C_VOL_DN  &none       &trans   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &none
 &bootloader  &sys_reset  &none         &none         &none       &trans   &none     &none     &none      &none      &none
-&none        &none       &none         &none         &kp C_PLAY           &none     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+&none        &none       &none         &none         &kp C_PLAY           &kp TAB   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
             >;
         };
     };
