@@ -237,12 +237,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
+        programmer {
             bindings = <
 &hkp N1 Q    &hkp N2 W    &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC   &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O    &hkp N0 P
 &mt LSHFT A  &mt LCTRL S  &lt 3 D    &lt 3 F    &kp G      &kp ENTER  &kp H      &lt 3 J    &lt 3 K    &mt RCTRL L  &mt LSHFT SEMI
 &kp Z        &kp X        &kp C      &kp V      &kp B      &kp ESC    &kp N      &kp M      &kp COMMA  &kp DOT      &kp FSLH
-&mo 2        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp ENTER  &lt 3 SQT  &mo 1      &kp LALT     &caps_word
+&mo 5        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp ENTER  &lt 3 SQT  &mo 2      &kp LALT     &caps_word
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp Q   &kp W   &kp E   &kp R   &kp T   &trans  &kp Y   &kp U   &kp I      &kp O    &kp P
+&kp A   &kp S   &kp D   &kp F   &kp G   &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI
+&kp Z   &kp X   &kp C   &kp V   &kp B   &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans     &trans   &trans
             >;
         };
 
@@ -255,30 +264,30 @@
             >;
         };
 
+        sym {
+            bindings = <
+&kp EXCL   &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &trans  &kp CARET               &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR
+&kp TILDE  &kp PIPE  &kp MINUS  &kp PLUS    &iapos       &trans  &none                   &kp RBRC   &kp LBRC  &kp RBRC  &kp COLON
+&kp GRAVE  &kp BSLH  &kp LBKT   &kp RBKT    &kp UNDER    &trans  &none                   &kp EQUAL  &kp LT    &kp GT    &kp QMARK
+&none      &none     &none      &none       &trans               &hkp LS(TAB) LS(ENTER)  &kp DQT    &none     &none     &none
+            >;
+        };
+
         num {
             bindings = <
-&to 0  &none  &none  &none  &none   &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
+&none  &to 0  &none  &none  &none   &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
 &none  &none  &none  &none  &none   &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
 &none  &none  &none  &none  &none   &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
 &none  &none  &none  &none  &trans          &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
             >;
         };
 
-        sym {
-            bindings = <
-&kp EXCL   &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &trans  &kp CARET               &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR
-&kp TILDE  &kp PIPE  &kp MINUS  &kp PLUS    &kp SQT      &trans  &kp DQT                 &kp RBRC   &kp LBRC  &kp RBRC  &kp COLON
-&kp GRAVE  &kp BSLH  &kp UNDER  &kp LBKT    &kp RBKT     &trans  &iapos                  &kp EQUAL  &kp LT    &kp GT    &kp QMARK
-&none      &none     &none      &none       &trans               &hkp LS(TAB) LS(ENTER)  &kp DQT    &none     &none     &none
-            >;
-        };
-
         fn {
             bindings = <
-&mo 2        &to 2            &none   &sys_reset  &none        &kp DEL  &none     &none     &none      &none      &none
-&kp LA(TAB)  &kp LA(LS(TAB))  &none   &none       &none        &trans   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &none
-&none        &none            &none   &none       &bootloader  &trans   &none     &none     &none      &none      &none
-&none        &trans           &trans  &trans      &kp C_PLAY            &kp TAB   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+&mo 4        &to 4            &none   &sys_reset  &none        &kp DEL  &none     &none     &none      &none      &to 0
+&kp LA(TAB)  &kp LA(LS(TAB))  &none   &none       &to 1        &trans   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &none
+&kp LSHIFT   &none            &none   &none       &bootloader  &trans   &none     &none     &none      &none      &none
+&none        &trans           &trans  &trans      &nbsp                 &kp TAB   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
             >;
         };
     };
