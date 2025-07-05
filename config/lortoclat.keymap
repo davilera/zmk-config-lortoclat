@@ -239,10 +239,10 @@
 
         programmer {
             bindings = <
-&hkp N1 Q    &hkp N2 W    &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC   &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O    &hkp N0 P
-&mt LSHFT A  &mt LCTRL S  &lt 3 D    &lt 3 F    &kp G      &kp ENTER  &kp H      &lt 3 J    &lt 3 K    &mt RCTRL L  &mt LSHFT SEMI
-&kp Z        &kp X        &kp C      &kp V      &kp B      &kp ESC    &kp N      &kp M      &kp COMMA  &kp DOT      &kp FSLH
-&mo 5        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &lt 3 SQT  &mo 2      &kp LALT     &caps_word
+&hkp N1 Q    &hkp N2 W    &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC  &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O    &hkp N0 P
+&mt LSHFT A  &mt LCTRL S  &lt 3 D    &lt 3 F    &kp G      &kp TAB   &kp H      &lt 3 J    &lt 3 K    &mt RCTRL L  &mt LSHFT SEMI
+&kp Z        &kp X        &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M      &kp COMMA  &kp DOT      &kp FSLH
+&mo 5        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &lt 3 SQT  &mo 2      &kp LALT     &caps_word
             >;
         };
 
