@@ -229,7 +229,7 @@
         compatible = "zmk,combos";
 
         caps_word {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <33 22>;
         };
     };
@@ -237,21 +237,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        programmer {
+        alpha {
             bindings = <
-&hkp N1 Q    &hkp N2 W    &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC   &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O    &hkp N0 P
-&mt LSHFT A  &mt LCTRL S  &lt 3 D    &lt 3 F    &kp G      &kp ENTER  &kp H      &lt 3 J    &lt 3 K    &mt RCTRL L  &mt LSHFT SEMI
-&kp Z        &kp X        &kp C      &kp V      &kp B      &kp ESC    &kp N      &kp M      &kp COMMA  &kp DOT      &kp FSLH
-&mo 5        &kp LGUI     &kp LSHFT  &kp LCTRL  &kp SPACE             &kp TAB    &lt 3 SQT  &mo 2      &kp LALT     &caps_word
-            >;
-        };
-
-        gaming {
-            bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T   &trans  &kp Y   &kp U   &kp I      &kp O    &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI
-&kp Z   &kp X   &kp C   &kp V   &kp B   &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans     &trans   &trans
+&kp Q  &kp W     &kp E      &kp R      &kp T      &kp BSPC  &kp Y      &kp U      &kp I      &kp O     &kp P
+&kp A  &kp S     &kp D      &kp F      &kp G      &kp TAB   &kp H      &kp J      &kp K      &kp L     &kp SEMI
+&kp Z  &kp X     &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH
+&mo 4  &kp LGUI  &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &lt 1 SQT  &mo 2      &kp LALT  &caps_word
             >;
         };
 
@@ -278,16 +269,16 @@
 &none  &none  &none  &none  &none   &trans  &kp UNDER  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS
 &none  &none  &none  &none  &none   &trans  &kp STAR   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
 &none  &none  &none  &none  &none   &trans  &kp SPACE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
-&mo 5  &none  &none  &none  &trans          &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
+&mo 4  &none  &none  &none  &trans          &nbsp      &kp KP_N0  &kp DOT    &kp EQUAL  &none
             >;
         };
 
         fn {
             bindings = <
-&kp LSHFT    &none            &none   &sys_reset  &none        &kp DEL  &none     &none     &none      &none      &to 0
-&kp LA(TAB)  &kp LA(LS(TAB))  &none   &none       &to 1        &trans   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &none
-&none        &none            &none   &none       &bootloader  &trans   &to 4     &none     &none      &none      &none
-&none        &trans           &trans  &trans      &trans                &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+&kp N1  &kp N2      &kp N3  &kp N4  &kp N5       &kp DEL  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0
+&to 0   &sys_reset  &none   &none   &none        &trans   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &none
+&none   &none       &none   &none   &bootloader  &trans   &to 3     &none     &none      &none      &none
+&none   &trans      &trans  &trans  &trans                &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
             >;
         };
     };
