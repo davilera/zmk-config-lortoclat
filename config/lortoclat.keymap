@@ -308,9 +308,9 @@
 
         fn {
             bindings = <
-&kp LA(TAB)  &kp LA(LS(TAB))  &none   &to 0   &none        &kp DEL  &kp LC(LS(C))  &kp LC(TAB)    &kp LS(LC(TAB))  &kp LC(LS(O))  &kp LS(LC(V))
+&kp LA(TAB)  &kp LA(LS(TAB))  &none   &to 0   &mo 4        &kp DEL  &kp LC(LS(C))  &kp LC(TAB)    &kp LS(LC(TAB))  &kp LC(LS(O))  &kp LS(LC(V))
 &kp LSHFT    &none            &to 4   &none   &to 1        &trans   &kp LEFT       &kp DOWN       &kp UP           &kp RIGHT      &none
-&none        &none            &none   &none   &bootloader  &trans   &kp LC(LS(N))  &kp LC(LS(M))  &none            &none          &kp C_POWER
+&mo 6        &none            &none   &none   &bootloader  &trans   &kp LC(LS(N))  &kp LC(LS(M))  &none            &none          &kp C_POWER
 &none        &trans           &trans  &trans  &trans                &kp TAB        &kp HOME       &kp PG_DN        &kp PG_UP      &kp END
             >;
         };
