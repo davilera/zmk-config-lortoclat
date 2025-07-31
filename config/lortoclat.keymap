@@ -256,10 +256,10 @@
 
         regular {
             bindings = <
-&hkp N1 Q    &hkp N2 W  &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC     &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O  &hkp N0 P
-&mt LSHFT A  &kp S      &lt 3 D    &lt 3 F    &kp G      &key_repeat  &kp H      &lt 3 J    &lt 3 K    &kp L      &mt LSHFT SEMI
-&kp Z        &kp X      &kp C      &kp V      &kp B      &kp ESC      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-&mo 6        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE               &kp ENTER  &kp SQT    &mo 2      &kp LALT   &caps_word
+&hkp N1 Q    &hkp N2 W  &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC  &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O  &hkp N0 P
+&mt LSHFT A  &kp S      &lt 3 D    &lt 3 F    &kp G      &kp TAB   &kp H      &lt 3 J    &lt 3 K    &kp L      &mt LSHFT SEMI
+&kp Z        &kp X      &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+&mo 6        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &kp SQT    &mo 2      &kp LALT   &caps_word
             >;
         };
 
@@ -312,7 +312,7 @@
             bindings = <
 &kp LA(TAB)  &kp LA(LS(TAB))  &none   &to 0   &none        &kp DEL  &kp LC(LS(C))  &kp LC(TAB)    &kp LS(LC(TAB))  &kp LC(LS(O))  &kp LS(LC(V))
 &kp LSHFT    &none            &none   &none   &to 1        &trans   &kp LEFT       &kp DOWN       &kp UP           &kp RIGHT      &none
-&none        &none            &none   &none   &bootloader  &trans   &kp LC(LS(N))  &kp LC(LS(M))  &none            &none          &kp C_POWER
+&none        &none            &none   &none   &bootloader  &trans   &kp LC(LS(N))  &kp LC(LS(M))  &none            &key_repeat    &kp C_POWER
 &none        &trans           &trans  &trans  &trans                &kp TAB        &kp HOME       &kp PG_DN        &kp PG_UP      &kp END
             >;
         };
