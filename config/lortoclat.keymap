@@ -217,7 +217,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RA(LS(GRAVE)) &kp LS(A)>;
+            bindings = <&macro_tap>, <&kp RA(LS(GRAVE)) &kp LS(O)>;
 
             label = "CAPOGRAVE";
         };
