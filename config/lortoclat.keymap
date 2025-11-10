@@ -211,6 +211,36 @@
 
             label = "IAPOS";
         };
+
+        capograve: capograve {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(LS(GRAVE)) &kp LS(A)>;
+
+            label = "CAPOGRAVE";
+        };
+
+        capagrave: capagrave {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(GRAVE) &kp LS(A)>;
+
+            label = "CAPAGRAVE";
+        };
+
+        capegrave: capegrave {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp RA(GRAVE) &kp LS(E)>;
+
+            label = "CAPEGRAVE";
+        };
     };
 
     behaviors {
@@ -253,6 +283,24 @@
         power {
             bindings = <&kp C_POWER>;
             key-positions = <5 27>;
+        };
+
+        capagrave {
+            bindings = <&capagrave>;
+            key-positions = <40 22 21>;
+            timeout-ms = <5>;
+        };
+
+        capegrave {
+            bindings = <&capegrave>;
+            key-positions = <40 2 21>;
+            timeout-ms = <5000>;
+        };
+
+        capograve {
+            bindings = <&capograve>;
+            key-positions = <40 21 11>;
+            timeout-ms = <5000>;
         };
     };
 
