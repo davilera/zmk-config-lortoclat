@@ -284,24 +284,6 @@
             bindings = <&kp C_POWER>;
             key-positions = <5 27>;
         };
-
-        capagrave {
-            bindings = <&capagrave>;
-            key-positions = <40 22 21>;
-            timeout-ms = <5>;
-        };
-
-        capegrave {
-            bindings = <&capegrave>;
-            key-positions = <40 2 21>;
-            timeout-ms = <5000>;
-        };
-
-        capograve {
-            bindings = <&capograve>;
-            key-positions = <40 21 11>;
-            timeout-ms = <5000>;
-        };
     };
 
     keymap {
