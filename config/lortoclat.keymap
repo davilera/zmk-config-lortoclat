@@ -270,13 +270,13 @@
 
         num {
             bindings = <&mo 4>;
-            key-positions = <33 34>;
+            key-positions = <33 22>;
             timeout-ms = <5000>;
         };
 
         fkeys {
             bindings = <&mo 5>;
-            key-positions = <33 22>;
+            key-positions = <33 23>;
             timeout-ms = <5000>;
         };
 
