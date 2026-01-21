@@ -241,6 +241,26 @@
 
             label = "CAPEGRAVE";
         };
+
+        capldotl: capldotl {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(L) &kp LC(LS(U))>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp B &kp N7>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_tap>,
+                <&kp LS(L)>;
+
+            label = "CAPLDOTL";
+        };
     };
 
     behaviors {
@@ -269,13 +289,13 @@
         compatible = "zmk,combos";
 
         num {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <33 22>;
             timeout-ms = <5000>;
         };
 
         fkeys {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <33 23>;
             timeout-ms = <5000>;
         };
@@ -292,9 +312,9 @@
         regular {
             bindings = <
 &hkp N1 Q    &hkp N2 W  &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC  &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O  &hkp N0 P
-&mt LSHFT A  &kp S      &lt 3 D    &lt 3 F    &kp G      &kp TAB   &kp H      &lt 3 J    &lt 3 K    &kp L      &mt LSHFT SEMI
+&mt LSHFT A  &kp S      &lt 4 D    &lt 4 F    &kp G      &kp TAB   &kp H      &lt 4 J    &lt 4 K    &kp L      &mt LSHFT SEMI
 &kp Z        &kp X      &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-&mo 6        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &kp SQT    &mo 2      &kp LALT   &caps_word
+&mo 7        &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &kp SQT    &mo 2      &kp LALT   &caps_word
             >;
         };
 
@@ -316,12 +336,21 @@
             >;
         };
 
+        i18n_caps {
+            bindings = <
+&trans         &capegrave  &kp LS(RA(E))  &trans  &trans  &trans  &kp LS(RA(Y))  &kp LS(RA(U))  &kp RA(LS(I))      &kp RA(LS(O))  &capograve
+&kp LS(RA(A))  &trans      &trans         &trans  &trans  &trans  &trans         &kp LS(RA(J))  &trans             &capldotl      &trans
+&capagrave     &trans      &trans         &trans  &trans  &trans  &kp RA(LS(N))  &trans         &kp LS(RA(COMMA))  &trans         &trans
+&none          &none       &none          &none   &none           &none          &none          &none              &none          &none
+            >;
+        };
+
         sym {
             bindings = <
 &kp EXCL   &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &trans  &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR
 &kp TILDE  &kp PIPE  &kp MINUS  &kp PLUS    &none        &trans  &none      &kp RBRC   &kp LBRC  &iapos    &kp COLON
 &kp GRAVE  &kp BSLH  &kp UNDER  &kp LBKT    &kp RBKT     &trans  &none      &kp EQUAL  &kp LT    &kp GT    &kp QMARK
-&none      &none     &none      &none       &trans               &trans     &kp DQT    &none     &none     &none
+&none      &trans    &trans     &trans      &trans               &trans     &kp DQT    &none     &none     &none
             >;
         };
 
