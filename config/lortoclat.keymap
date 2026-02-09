@@ -279,6 +279,8 @@
             label = "TD_Q1";
             #binding-cells = <0>;
             bindings = <&hkp N1 Q>, <&kp Q>;
+
+            tapping-term-ms = <0>;
         };
     };
 
