@@ -308,7 +308,7 @@
         };
 
         apps {
-            bindings = <&kp LS(LALT)>;
+            bindings = <&kp LG(LALT)>;
             key-positions = <42 41>;
         };
     };
