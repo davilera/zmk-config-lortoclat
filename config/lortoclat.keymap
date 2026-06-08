@@ -319,7 +319,7 @@
         regular {
             bindings = <
 &hkp N1 Q     &hkp N2 W  &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC  &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O  &hkp N0 P
-&hkp LSHFT A  &kp S      &mokp 4 D  &mokp 4 F  &kp G      &kp TAB   &kp H      &mokp 4 J  &mokp 4 K  &kp L      &hkp LSHFT SEMI
+&hkp LSHFT A  &kp S      &mokp 4 D  &mokp 5 F  &kp G      &kp TAB   &kp H      &kp J      &mokp 4 K  &kp L      &hkp LSHFT SEMI
 &kp Z         &kp X      &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
 &mo 7         &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &kp SQT    &mo 2      &kp LALT   &caps_word
             >;
