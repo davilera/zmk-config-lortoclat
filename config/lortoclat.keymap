@@ -361,9 +361,9 @@
 
         apps {
             bindings = <
-&kp LS(LG(Q))  &kp LS(LG(W))  &kp LS(LG(E))  &kp LS(LG(R))  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(A))  &kp LS(LG(S))  &kp LS(LG(D))  &kp LS(LG(F))  &kp LS(LG(G))  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(Z))  &kp LS(LG(X))  &kp LS(LG(C))  &kp LS(LG(V))  &kp LS(LG(B))  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LA(Q))  &kp LG(LA(W))  &kp LG(LA(E))  &kp LG(LA(R))  &kp LG(LA(T))  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LA(A))  &kp LG(LA(S))  &kp LG(LA(D))  &kp LG(LA(F))  &kp LG(LA(G))  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(LA(Z))  &kp LG(LA(X))  &kp LG(LA(C))  &kp LG(LA(V))  &kp LG(LA(B))  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &trans         &trans         &trans         &trans                 &trans  &trans  &trans  &trans  &trans
             >;
         };
