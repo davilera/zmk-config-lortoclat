@@ -18,5 +18,5 @@
 #
 ---
 include:
-  - board: nice_nano
-    shield: lortoclat
+    - board: nice_nano//zmk
+      shield: lortoclat
