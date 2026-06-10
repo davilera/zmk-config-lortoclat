@@ -307,10 +307,10 @@
 
         regular {
             bindings = <
-&hkp N1 Q     &hkp N2 W  &hkp N3 E  &hkp N4 R  &hkp N5 T  &kp BSPC  &hkp N6 Y  &hkp N7 U  &hkp N8 I  &hkp N9 O  &hkp N0 P
-&hkp LSHFT A  &mokp 4 S  &mokp 3 D  &mokp 3 F  &kp G      &kp TAB   &kp H      &mokp 3 J  &mokp 3 K  &kp L      &hkp LSHFT SEMI
-&kp Z         &kp X      &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M      &kp COMMA  &kp DOT    &mokp 6 FSLH
-&mo 7         &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &kp SQT    &mo 2      &kp LALT   &caps_word
+&kp Q         &kp W      &kp E      &kp R      &kp T      &kp BSPC  &kp Y      &kp U      &kp I      &kp O     &kp P
+&hkp LSHFT A  &mokp 4 S  &mokp 3 D  &mokp 3 F  &kp G      &kp TAB   &kp H      &mokp 3 J  &mokp 3 K  &kp L     &hkp LSHFT SEMI
+&kp Z         &kp X      &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M      &kp COMMA  &kp DOT   &mokp 6 FSLH
+&mo 7         &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &kp SQT    &mo 2      &kp LALT  &caps_word
             >;
         };
 
@@ -343,10 +343,10 @@
 
         numpad {
             bindings = <
-&none  &none  &none           &none  &none   &trans  &kp MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY
-&none  &none  &none           &none  &none   &trans  &kp PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp COLON
-&none  &none  &none           &none  &none   &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
-&none  &none  &kp UNDERSCORE  &nbsp  &trans          &trans     &kp KP_N0  &kp KP_N0  &kp DOT    &none
+&none  &none  &none           &none  &kp KP_NUMLOCK  &trans  &kp MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY
+&none  &none  &none           &none  &none           &trans  &kp PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp COLON
+&none  &none  &none           &none  &none           &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp SLASH
+&none  &none  &kp UNDERSCORE  &nbsp  &trans                  &trans     &kp KP_N0  &kp KP_N0  &kp DOT    &none
             >;
         };
 
