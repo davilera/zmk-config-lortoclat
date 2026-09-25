@@ -291,7 +291,7 @@
         compatible = "zmk,combos";
 
         fkeys {
-            bindings = <&mo 5>;
+            bindings = <&mo 4>;
             key-positions = <33 22>;
             timeout-ms = <5000>;
         };
@@ -300,6 +300,16 @@
             bindings = <&kp C_POWER>;
             key-positions = <5 27>;
         };
+
+        i18n {
+            bindings = <&mo 1>;
+            key-positions = <35 40>;
+        };
+
+        num {
+            bindings = <&mo 3>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
@@ -307,19 +317,10 @@
 
         regular {
             bindings = <
-&kp Q         &kp W      &kp E      &kp R      &kp T      &kp BSPC  &kp Y      &kp U      &kp I      &kp O     &kp P
-&hkp LSHFT A  &mokp 4 S  &mokp 3 D  &mokp 3 F  &kp G      &kp TAB   &kp H      &mokp 3 J  &mokp 3 K  &kp L     &hkp LSHFT SEMI
-&kp Z         &kp X      &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M      &kp COMMA  &kp DOT   &mokp 6 FSLH
-&mo 7         &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &kp SQT    &mo 2      &kp LALT  &caps_word
-            >;
-        };
-
-        gaming {
-            bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T   &trans  &kp Y   &kp U   &kp I      &kp O    &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI
-&kp Z   &kp X   &kp C   &kp V   &kp B   &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans     &trans   &trans
+&kp Q  &kp W     &kp E      &kp R      &kp T      &kp BSPC  &kp Y      &kp U    &kp I      &kp O     &kp P
+&kp A  &kp S     &kp D      &kp F      &kp G      &kp TAB   &kp H      &kp J    &kp K      &kp L     &kp SEMICOLON
+&kp Z  &kp X     &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M    &kp COMMA  &kp DOT   &mokp 5 FSLH
+&mo 6  &kp LGUI  &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &kp SQT  &mo 2      &kp LALT  &caps_word
             >;
         };
 
@@ -371,7 +372,7 @@
         fn {
             bindings = <
 &kp LA(TAB)  &kp LA(LS(TAB))  &none   &to 0     &none        &kp DEL  &kp LC(LS(C))  &kp LC(TAB)    &kp LS(LC(TAB))  &kp LC(LS(O))  &kp LS(LC(V))
-&kp LSHFT    &none            &kp UP  &kp DOWN  &to 1        &trans   &kp LEFT       &kp DOWN       &kp UP           &kp RIGHT      &none
+&kp LSHFT    &none            &kp UP  &kp DOWN  &to 0        &trans   &kp LEFT       &kp DOWN       &kp UP           &kp RIGHT      &none
 &none        &none            &none   &none     &bootloader  &trans   &kp LC(LS(N))  &kp LC(LS(M))  &none            &key_repeat    &none
 &none        &trans           &trans  &trans    &trans                &none          &kp HOME       &kp PG_DN        &kp PG_UP      &kp END
             >;
