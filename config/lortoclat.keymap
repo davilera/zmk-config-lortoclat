@@ -305,12 +305,6 @@
             bindings = <&mo 1>;
             key-positions = <35 40>;
         };
-
-        num {
-            bindings = <&mo 3>;
-            key-positions = <37 36>;
-            timeout-ms = <1000>;
-        };
     };
 
     keymap {
@@ -318,10 +312,10 @@
 
         regular {
             bindings = <
-&kp Q  &kp W     &kp E      &kp R      &kp T      &kp BSPC  &kp Y      &kp U         &kp I      &kp O     &kp P
-&kp A  &kp S     &kp D      &kp F      &kp G      &kp TAB   &kp H      &kp J         &kp K      &kp L     &kp SEMICOLON
-&kp Z  &kp X     &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M         &kp COMMA  &kp DOT   &mokp 5 FSLH
-&mo 6  &kp LGUI  &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &mokp 2 APOS  &mo 1      &kp LALT  &caps_word
+&kp Q  &kp W      &kp E      &kp R      &kp T      &kp BSPC  &kp Y      &kp U         &kp I      &kp O     &kp P
+&kp A  &mokp 3 S  &kp D      &kp F      &kp G      &kp TAB   &kp H      &kp J         &kp K      &kp L     &kp SEMICOLON
+&kp Z  &kp X      &kp C      &kp V      &kp B      &kp ESC   &kp N      &kp M         &kp COMMA  &kp DOT   &mokp 5 FSLH
+&mo 6  &kp LGUI   &kp LSHFT  &kp LCTRL  &kp SPACE            &kp ENTER  &mokp 2 APOS  &mo 1      &kp LALT  &caps_word
             >;
         };
 
